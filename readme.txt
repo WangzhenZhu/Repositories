@@ -1,3 +1,0 @@
-gitss
-st
-haha
