@@ -33,7 +33,6 @@
     self.navigationItem.rightBarButtonItem = searchButton;
 }
 
--
 
 /*
 #pragma mark - Navigation
