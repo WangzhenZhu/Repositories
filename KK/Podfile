@@ -1,0 +1,20 @@
+platform :ios, '8.0'
+
+def pods
+  pod 'AFNetworking'
+  pod 'mob_smssdk'
+  pod 'SVProgressHUD'
+  pod 'MJRefresh'
+  pod 'YYModel'
+  pod 'Masonry'
+  pod 'SDWebImage'
+end
+
+target 'KKDoc' do
+  pods
+end
+
+
+target 'KKPat' do
+  pods
+end
