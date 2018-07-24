@@ -62,7 +62,6 @@
 		21A9792D21002FA9006AE1BF /* UpDownSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A9792C21002FA9006AE1BF /* UpDownSelectView.m */; };
 		21A97938210063C2006AE1BF /* InfoHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21A97937210063C2006AE1BF /* InfoHeadView.xib */; };
 		21A9793B210063EB006AE1BF /* InfoHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A9793A210063EB006AE1BF /* InfoHeadView.m */; };
-		21A9793D21006F68006AE1BF /* Historyillness.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21A9793C21006F68006AE1BF /* Historyillness.xib */; };
 		21A97940210099CA006AE1BF /* KKPatTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A9793F210099CA006AE1BF /* KKPatTabBarController.m */; };
 		21A979492102120A006AE1BF /* SicknessNameCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A979472102120A006AE1BF /* SicknessNameCell.m */; };
 		21A9794A2102120A006AE1BF /* SicknessNameCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21A979482102120A006AE1BF /* SicknessNameCell.xib */; };
@@ -72,6 +71,7 @@
 		21A979622102DB06006AE1BF /* KKPOrdersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A979612102DB06006AE1BF /* KKPOrdersViewController.m */; };
 		21A979652102DB29006AE1BF /* KKPMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A979642102DB29006AE1BF /* KKPMeViewController.m */; };
 		21A979682102DF8B006AE1BF /* KKPNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A979672102DF8B006AE1BF /* KKPNavController.m */; };
+		21A97A1821074498006AE1BF /* TabBarBgView.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A97A1721074498006AE1BF /* TabBarBgView.m */; };
 		26D84CE629B7CBF7E993F394 /* libPods-KKDoc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C69FE6D56A94AE8E7490851A /* libPods-KKDoc.a */; };
 		BA545FA52363374FF3E144EB /* libPods-KKPat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 88198D1A6AF92FDE15D65326 /* libPods-KKPat.a */; };
 /* End PBXBuildFile section */
@@ -143,7 +143,6 @@
 		21A97937210063C2006AE1BF /* InfoHeadView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoHeadView.xib; sourceTree = "<group>"; };
 		21A97939210063EB006AE1BF /* InfoHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InfoHeadView.h; sourceTree = "<group>"; };
 		21A9793A210063EB006AE1BF /* InfoHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InfoHeadView.m; sourceTree = "<group>"; };
-		21A9793C21006F68006AE1BF /* Historyillness.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Historyillness.xib; sourceTree = "<group>"; };
 		21A9793E210099CA006AE1BF /* KKPatTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKPatTabBarController.h; sourceTree = "<group>"; };
 		21A9793F210099CA006AE1BF /* KKPatTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKPatTabBarController.m; sourceTree = "<group>"; };
 		21A979462102120A006AE1BF /* SicknessNameCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SicknessNameCell.h; sourceTree = "<group>"; };
@@ -161,6 +160,8 @@
 		21A979642102DB29006AE1BF /* KKPMeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKPMeViewController.m; sourceTree = "<group>"; };
 		21A979662102DF8B006AE1BF /* KKPNavController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKPNavController.h; sourceTree = "<group>"; };
 		21A979672102DF8B006AE1BF /* KKPNavController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKPNavController.m; sourceTree = "<group>"; };
+		21A97A1621074498006AE1BF /* TabBarBgView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBarBgView.h; sourceTree = "<group>"; };
+		21A97A1721074498006AE1BF /* TabBarBgView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabBarBgView.m; sourceTree = "<group>"; };
 		381CE4C3B1C41CA77FE3EE35 /* Pods-KKDoc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KKDoc.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KKDoc/Pods-KKDoc.debug.xcconfig"; sourceTree = "<group>"; };
 		64F86BA8A040AE55EE4D3A80 /* Pods-KKDoc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KKDoc.release.xcconfig"; path = "Pods/Target Support Files/Pods-KKDoc/Pods-KKDoc.release.xcconfig"; sourceTree = "<group>"; };
 		88198D1A6AF92FDE15D65326 /* libPods-KKPat.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KKPat.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -312,6 +313,7 @@
 		2168979520EBA4EE003A2DE0 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				21A97A152107446B006AE1BF /* Menu */,
 				218147C720FDE2A50038133D /* EntryInfo */,
 			);
 			path = View;
@@ -645,7 +647,6 @@
 			children = (
 				21A9792521002697006AE1BF /* Historyillness.h */,
 				21A9792621002697006AE1BF /* Historyillness.m */,
-				21A9793C21006F68006AE1BF /* Historyillness.xib */,
 				21A97939210063EB006AE1BF /* InfoHeadView.h */,
 				21A9793A210063EB006AE1BF /* InfoHeadView.m */,
 				21A97937210063C2006AE1BF /* InfoHeadView.xib */,
@@ -663,6 +664,15 @@
 				21A9792C21002FA9006AE1BF /* UpDownSelectView.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		21A97A152107446B006AE1BF /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				21A97A1621074498006AE1BF /* TabBarBgView.h */,
+				21A97A1721074498006AE1BF /* TabBarBgView.m */,
+			);
+			path = Menu;
 			sourceTree = "<group>";
 		};
 		26EED606BD0EFAD227A7C2EB /* Frameworks */ = {
@@ -790,7 +800,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2181475420F6D6FD0038133D /* KKMed.strings in Resources */,
-				21A9793D21006F68006AE1BF /* Historyillness.xib in Resources */,
 				218147AA20FC7DA20038133D /* DisclaimerViewController.xib in Resources */,
 				218147B120FC938C0038133D /* RefuseViewController.xib in Resources */,
 				2181478B20FC2A830038133D /* LaunchScreen.storyboard in Resources */,
@@ -946,6 +955,7 @@
 				218147C620FDD4AA0038133D /* EntryInfoViewController.m in Sources */,
 				2181478E20FC35200038133D /* NetWorkingManager.m in Sources */,
 				21A9792721002697006AE1BF /* Historyillness.m in Sources */,
+				21A97A1821074498006AE1BF /* TabBarBgView.m in Sources */,
 				216897D720EBB125003A2DE0 /* KKPBaseViewController.m in Sources */,
 				218147B020FC938C0038133D /* RefuseViewController.m in Sources */,
 				21A9793B210063EB006AE1BF /* InfoHeadView.m in Sources */,

@@ -23,11 +23,9 @@
 
 @property (weak, nonatomic) IBOutlet UIButton *ReadDisclaimer;
 
-@property (weak, nonatomic) IBOutlet UILabel *ReadStatusLab;
-
 @property (weak, nonatomic) IBOutlet UIButton *LoginBtn;
 
-@property (weak, nonatomic) IBOutlet UIImageView *AgreenDisclaimerIcon;
+
 @end
 
 @implementation LoginViewController
@@ -45,36 +43,53 @@
     self.phoneNumberTextField.delegate = self;
     self.phoneNumberTextField.backgroundColor = RGBA(255, 255, 255, 0.5);
     self.phoneNumberTextField.layer.borderWidth = 1.0f;
-    self.phoneNumberTextField.layer.borderColor = RGBACG(255, 255, 255, 1);
-    self.phoneNumberTextField.layer.cornerRadius = 5.0f;
+    self.phoneNumberTextField.layer.borderColor = RGBACG(225, 225, 225, 1);
+    self.phoneNumberTextField.layer.cornerRadius = _phoneNumberTextField.bounds.size.height * 0.5f;
     self.phoneNumberTextField.layer.masksToBounds = YES;
     [self.phoneNumberTextField setBorderStyle:UITextBorderStyleNone];
-    //设置光标位置
-    self.phoneNumberTextField.leftView  = [[UIView alloc] initWithFrame:CGRectMake(0.f, 0.f, 15.f, 0.f)];
+    //加手机号输入框左侧图标
     self.phoneNumberTextField.leftViewMode = UITextFieldViewModeAlways;
+    UIImageView *phoneImage = [[UIImageView alloc] initWithImage:IMG(@"person_login_img")];
+    UIView *lv = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 40, 20)];
+    phoneImage.center = lv.center;
+    [lv addSubview:phoneImage];
+    self.phoneNumberTextField.leftView = lv;
+    //设置光标位置
+//    self.phoneNumberTextField.leftView  = [[UIView alloc] initWithFrame:CGRectMake(0.f, 0.f, 15.f, 0.f)];
+//    self.phoneNumberTextField.leftViewMode = UITextFieldViewModeAlways;
     
     self.VerificationCodeTextField.delegate = self;
     self.VerificationCodeTextField.backgroundColor = RGBA(255, 255, 255, 0.5);
     self.VerificationCodeTextField.layer.borderWidth = 1.0f;
-    self.VerificationCodeTextField.layer.borderColor = RGBACG(255, 255, 255, 1);
-    self.VerificationCodeTextField.layer.cornerRadius = 5.0f;
+    self.VerificationCodeTextField.layer.borderColor = RGBACG(225, 225, 225, 1);
+    self.VerificationCodeTextField.layer.cornerRadius = _VerificationCodeTextField.bounds.size.height * 0.5f;
     self.VerificationCodeTextField.layer.masksToBounds = YES;
     [self.VerificationCodeTextField setBorderStyle:UITextBorderStyleNone];
-    self.VerificationCodeTextField.leftView  = [[UIView alloc] initWithFrame:CGRectMake(0.f, 0.f, 15.f, 0.f)];
     self.VerificationCodeTextField.leftViewMode = UITextFieldViewModeAlways;
+    UIImageView *VerificationCodeImage = [[UIImageView alloc] initWithImage:IMG(@"lock_login_img")];
+    UIView *VerificationCodeLeftView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 40, 20)];
+    VerificationCodeImage.center = VerificationCodeLeftView.center;
+    [VerificationCodeLeftView addSubview:VerificationCodeImage];
+    self.VerificationCodeTextField.leftView = VerificationCodeLeftView;
     
     self.SendCodeBtn.backgroundColor = RGBA(255, 255, 255, 0.5);
-    self.SendCodeBtn.layer.cornerRadius = 5.0f;
+    self.SendCodeBtn.layer.cornerRadius = _SendCodeBtn.bounds.size.height * 0.5;
+    self.SendCodeBtn.layer.borderWidth = 1.0f;
+    self.SendCodeBtn.layer.borderColor = RGBACG(105, 180, 170, 1);
     self.SendCodeBtn.layer.masksToBounds = YES;
     [self.SendCodeBtn addTarget:self action:@selector(getVerificationCode) forControlEvents:UIControlEventTouchUpInside];
     
-    self.ReadDisclaimer.backgroundColor = RGBA(255, 255, 255, 1);
-    self.ReadDisclaimer.layer.cornerRadius = 5.0f;
-    self.ReadDisclaimer.layer.masksToBounds = YES;
-    [self.ReadDisclaimer addTarget:self action:@selector(goReadDisclaimer) forControlEvents:UIControlEventTouchUpInside];
+//    self.ReadDisclaimer.backgroundColor = RGBA(255, 255, 255, 1);
+    [self.ReadDisclaimer setTitleColor:ThemeColor forState:UIControlStateNormal];
     
-    self.ReadStatusLab.textColor = RGB(255, 255, 255);
-    self.LoginBtn.backgroundColor = RGB(215, 215, 215);
+    [self.ReadDisclaimer addTarget:self action:@selector(goReadDisclaimer) forControlEvents:UIControlEventTouchUpInside];
+//    [self.ReadDisclaimer setImage:IMG(@"readDisclamer_login_img") forState:UIControlStateNormal];
+    self.ReadDisclaimer.backgroundColor = [UIColor clearColor];
+   // self.ReadDisclaimer.tintColor = ThemeColor;
+//    self.ReadDisclaimer.imageEdgeInsets = UIEdgeInsetsMake(10, 10, 10, 60);
+//    self.ReadDisclaimer.titleEdgeInsets = UIEdgeInsetsMake(0, -20, 0, 0);
+    //self.ReadStatusLab.textColor = RGB(255, 255, 255);
+
     self.LoginBtn.layer.cornerRadius = 5.0f;
     self.LoginBtn.layer.masksToBounds = YES;
     [self.LoginBtn addTarget:self action:@selector(goToVerification) forControlEvents: UIControlEventTouchUpInside];
@@ -87,15 +102,18 @@
     [super viewWillAppear:animated];
     if ([[KKUserDefaults sharedInstance] boolValueWithKey:@"IsAgreenDisclaime"]) {
         [self.LoginBtn setEnabled:YES];
-        self.LoginBtn.backgroundColor = RGB(255, 255, 255);
-        self.ReadStatusLab.hidden = NO;
-        self.AgreenDisclaimerIcon.hidden = NO;
-        self.ReadDisclaimer.hidden = YES;
+        self.LoginBtn.backgroundColor = ThemeColor;
+        [self.ReadDisclaimer setTitle:@"免责声明已阅读" forState:UIControlStateNormal];
+        [self.ReadDisclaimer setImage:IMG(@"read_login_img") forState:UIControlStateNormal];
+        [self.LoginBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     }else
     {
-        self.ReadStatusLab.hidden = YES;
-        self.AgreenDisclaimerIcon.hidden = YES;
-        self.ReadDisclaimer.hidden = NO;
+        self.LoginBtn.backgroundColor = RGB(215, 215, 215);
+        [self.LoginBtn setEnabled:NO];
+        [self.ReadDisclaimer setTitle:@"请阅读免责声明" forState:UIControlStateNormal];
+        [self.ReadDisclaimer setImage:IMG(@"readDisclamer_login_img") forState:UIControlStateNormal];
+        [self.LoginBtn setTitleColor:[UIColor blackColor] forState: UIControlStateNormal];
+
     }
 }
 #pragma mark - event response(键盘收回)
@@ -167,11 +185,24 @@
 //
 //    }else
 //    {
-        EntryInfoViewController *EntryInfoVc = [[EntryInfoViewController alloc] init];
-        [self presentViewController:EntryInfoVc animated:YES completion:nil];
+//        [SMSSDK commitVerificationCode:_VerificationCodeTextField.text phoneNumber:_phoneNumberTextField.text zone:@"86" result:^(NSError *error) {
+//
+//            if (!error)
+//            {
+                // 验证成功
+                EntryInfoViewController *EntryInfoVc = [[EntryInfoViewController alloc] init];
+                [self presentViewController:EntryInfoVc animated:YES completion:nil];
+//            }
+//            else
+//            {
+//               [SVProgressHUD showInfoWithStatus:NSLocalizedStringFromTable(@"InputVerificationCodeError", @"KKMed", nil)];
+//                // error
+//            }
+//        }];
+//
 //    }
-    
-    KKPatTabBarController *KKPTabVc = [[KKPatTabBarController alloc] init];
+//
+//    KKPatTabBarController *KKPTabVc = [[KKPatTabBarController alloc] init];
     
     
     

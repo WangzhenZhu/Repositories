@@ -22,12 +22,11 @@
     //设置启动页停留时间
      [NSThread sleepForTimeInterval:1];
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    
     if ([[KKUserDefaults sharedInstance] valueForKey:@"isFirst"]) {
-//        LoginViewController *LoginVc = [[LoginViewController alloc] init];
-//        self.window.rootViewController =  LoginVc;
-        KKPatTabBarController *KKPTabVc = [[KKPatTabBarController alloc] init];
-        self.window.rootViewController = KKPTabVc;
+        LoginViewController *LoginVc = [[LoginViewController alloc] init];
+        self.window.rootViewController =  LoginVc;
+//        KKPatTabBarController *KKPTabVc = [[KKPatTabBarController alloc] init];
+//        self.window.rootViewController = KKPTabVc;
     
     }else
     {

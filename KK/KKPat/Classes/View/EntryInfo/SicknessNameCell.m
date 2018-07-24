@@ -20,8 +20,6 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
     self.backgroundColor = [UIColor clearColor];
-    self.SicknessNameBg.layer.cornerRadius = 6.0f;
-    self.SicknessNameBg.layer.masksToBounds = YES;
     
     // Initialization code
 }

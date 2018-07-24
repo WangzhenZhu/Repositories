@@ -9,6 +9,7 @@
 #import "RefuseViewController.h"
 
 @interface RefuseViewController ()
+
 @property (weak, nonatomic) IBOutlet UIButton *BackBtn;
 
 @end
@@ -27,10 +28,6 @@
     
    // [[self dismissViewControllerAnimated:NO completion:nil] ]
     [self.presentingViewController.presentingViewController dismissViewControllerAnimated:NO completion:nil];
-}
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 /*

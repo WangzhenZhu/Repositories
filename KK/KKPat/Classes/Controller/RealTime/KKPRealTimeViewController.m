@@ -7,7 +7,7 @@
 //
 
 #import "KKPRealTimeViewController.h"
-
+#import "KKConfiguration.h"
 @interface KKPRealTimeViewController()<UISearchBarDelegate,UITableViewDelegate,UITableViewDataSource>
 
 //@property (nonatomic, strong) UITableView *
@@ -25,8 +25,9 @@
 
 - (void)addSearchbar
 {
-    UISearchBar *searchbar = [[UISearchBar alloc] initWithFrame:CGRectMake(0.0f, 0.0f,1000.0f,0.0f)];
+    UISearchBar *searchbar = [[UISearchBar alloc] initWithFrame:CGRectMake(18, 0.0f,ScreenWidth - 2*18, 0.0f)];
     searchbar.delegate = self;
+    NSLog(@"----lllll%f",searchbar.bounds.size.height);
     [searchbar setBarTintColor:[UIColor redColor]];
     [searchbar setPlaceholder:@"一键寻医"];
     UIBarButtonItem *searchButton = [[UIBarButtonItem alloc] initWithCustomView:searchbar];

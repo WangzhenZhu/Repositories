@@ -10,4 +10,5 @@
 
 @interface KKPatTabBar : UITabBar
 
+@property (nonatomic, strong) UIImageView *BgView;
 @end

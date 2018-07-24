@@ -7,9 +7,13 @@
 //
 
 #import "InfoHeadView.h"
-
+#import "KKConfiguration.h"
 @interface InfoHeadView()
 
+@property (weak, nonatomic) IBOutlet UIImageView *HeadImageView;
+@property (weak, nonatomic) IBOutlet UIView *baseBgView;
+
+@property (weak, nonatomic) IBOutlet UIView *IDCardBgView;
 @end
 @implementation InfoHeadView
 
@@ -18,15 +22,19 @@
     self = [super initWithFrame:frame];
     if (self) {
         self = [[[NSBundle mainBundle] loadNibNamed:@"InfoHeadView" owner:nil options:nil] firstObject];
+        self.baseBgView.layer.cornerRadius = 5.0f;
+        self.baseBgView.layer.masksToBounds = YES;
+        self.baseBgView.layer.borderWidth = 1.0f;
+        self.baseBgView.layer.borderColor = RGBACG(234, 234, 234, 1);
+        self.IDCardBgView.layer.cornerRadius = 5.0f;
+        self.IDCardBgView.layer.masksToBounds = YES;
+        self.IDCardBgView.layer.borderWidth = 1.0f;
+        self.IDCardBgView.layer.borderColor = RGBACG(234, 234, 234, 1);
+        
+      
     }
     return self;
 }
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
-}
-*/
+
 
 @end

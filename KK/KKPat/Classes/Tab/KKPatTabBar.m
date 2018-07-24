@@ -20,12 +20,28 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
+    
         //设置tabbaritem选中状态时的颜色
-        self.tintColor = [UIColor redColor];
+//        if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 10.0) {
+//           self.subviews[0].subviews[1].hidden = YES;
+//        }else{
+         //   [self setValue:nil forKeyPath:@"_UIBarBackground"];
+        //    [self setShadowImage:[UIImage new]];
+//        }
+//        TabBarBgView *BgView = [[TabBarBgView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, 90)];
+        
+        self.tintColor = [UIColor whiteColor];
+//        [self setBackgroundImage:IMG(@"tab_bg")];
+//        [self setBackgroundImage:[self createImageWithColor:[UIColor blueColor]]];
+        //self.setBackgroundImage = [self createImageWithColor:[UIColor clearColor]];
+    
+//        [self setBackgroundImage: [self UIViewToUIImageView:BgView]];
         [self addSubview:self.centerBtn];
     }
     return self;
 }
+
+
 
 - (void)layoutSubviews
 {
@@ -40,7 +56,7 @@
     CGFloat barWidth = self.bounds.size.width;
     CGFloat barHeight = self.bounds.size.height;
     CGFloat centerBtnWidth = CGRectGetWidth(self.centerBtn.frame);
-    CGFloat centerBtnHeight = CGRectGetHeight(self.centerBtn.frame);
+//    CGFloat centerBtnHeight = CGRectGetHeight(self.centerBtn.frame);
     //设置中间按钮的位置居中凸出一点
     self.centerBtn.center = CGPointMake(barWidth/2, barHeight/2 - 20);
     
@@ -77,7 +93,7 @@
 {
     if (_centerBtn == nil) {
         _centerBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
-        [_centerBtn setImage:IMG(@"centerIcon") forState:UIControlStateNormal];
+        [_centerBtn setImage:IMG(@"sick_tab_icon") forState:UIControlStateNormal];
         [_centerBtn addTarget:self action:@selector(clickCenterBtn:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _centerBtn;
@@ -107,6 +123,40 @@
     }
     return nil;
 }
+
+- (UIImage *)createImageWithColor:(UIColor *)color
+
+{
+    
+    CGRect rect=CGRectMake(0.0f, 0.0f, 1.0f, 1.0f);
+    
+    UIGraphicsBeginImageContext(rect.size);
+    
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    
+    CGContextSetFillColorWithColor(context, [color CGColor]);
+    
+    CGContextFillRect(context, rect);
+    
+    
+    
+    UIImage *theImage = UIGraphicsGetImageFromCurrentImageContext();
+    
+    UIGraphicsEndImageContext();
+    
+    return theImage;
+    
+}
+//UIview转为UIImageView
+//-(UIImage*)UIViewToUIImageView:(UIView*)view{
+//    CGSize size = view.bounds.size;
+//    // 下面的方法：第一个参数表示区域大小；第二个参数表示是否是非透明的如果需要显示半透明效果，需要传NO，否则传YES；第三个参数是屏幕密度
+//    UIGraphicsBeginImageContextWithOptions(size, NO, [UIScreen mainScreen].scale);
+//    [view.layer renderInContext:UIGraphicsGetCurrentContext()];
+//    UIImage*image = UIGraphicsGetImageFromCurrentImageContext();
+//    UIGraphicsEndImageContext();
+//    return image;
+//}
 /*
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.

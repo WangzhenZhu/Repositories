@@ -12,7 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RefuseViewController">
             <connections>
-                <outlet property="BackBtn" destination="y3G-nd-ajm" id="oKk-OV-hsi"/>
+                <outlet property="BackBtn" destination="8DV-gu-Zwe" id="han-LT-4zE"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -21,47 +21,47 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y3G-nd-ajm">
-                    <rect key="frame" x="10" y="38" width="100" height="50"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="100" id="h1G-7A-Ers"/>
-                        <constraint firstAttribute="height" constant="50" id="iJw-F1-dM0"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                    <state key="normal" title="返回">
-                        <color key="titleColor" red="0.41176470590000003" green="0.70588235290000001" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                    </state>
-                </button>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gN2-ug-GR2">
-                    <rect key="frame" x="112.5" y="188" width="150" height="150"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="doctor_refuse_bg" translatesAutoresizingMaskIntoConstraints="NO" id="gN2-ug-GR2">
+                    <rect key="frame" x="112.5" y="102" width="150" height="200"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="150" id="YJg-C0-J7M"/>
-                        <constraint firstAttribute="height" constant="150" id="a5g-yK-vDW"/>
+                        <constraint firstAttribute="height" constant="200" id="a5g-yK-vDW"/>
                     </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="康康医生致力于打造更好的医疗服务！" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fPD-da-nPD">
-                    <rect key="frame" x="80" y="388" width="215" height="150"/>
+                    <rect key="frame" x="62.5" y="402" width="250" height="150"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="150" id="IpF-dO-daH"/>
+                        <constraint firstAttribute="width" constant="250" id="ROz-02-M1K"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
                     <color key="textColor" red="0.41176470590000003" green="0.70588235290000001" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8DV-gu-Zwe">
+                    <rect key="frame" x="255" y="562" width="100" height="75"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="75" id="fBK-RM-isu"/>
+                        <constraint firstAttribute="width" constant="100" id="sSH-pj-UUq"/>
+                    </constraints>
+                    <state key="normal" image="refuse_back"/>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="fPD-da-nPD" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="80" id="0tS-MT-Vnl"/>
-                <constraint firstItem="y3G-nd-ajm" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="10" id="beS-PD-2P7"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="8DV-gu-Zwe" secondAttribute="bottom" constant="30" id="M48-Ce-BNY"/>
+                <constraint firstItem="8DV-gu-Zwe" firstAttribute="top" secondItem="fPD-da-nPD" secondAttribute="bottom" constant="10" id="c5A-au-aA2"/>
                 <constraint firstItem="fPD-da-nPD" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="dMC-6S-wbf"/>
                 <constraint firstItem="gN2-ug-GR2" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="dZF-9s-sYk"/>
-                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="fPD-da-nPD" secondAttribute="trailing" constant="80" id="nBY-mD-fqo"/>
-                <constraint firstItem="fPD-da-nPD" firstAttribute="top" secondItem="gN2-ug-GR2" secondAttribute="bottom" constant="50" id="r4c-KF-ZF2"/>
-                <constraint firstItem="y3G-nd-ajm" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="18" id="sXK-pF-f0h"/>
-                <constraint firstItem="gN2-ug-GR2" firstAttribute="top" secondItem="y3G-nd-ajm" secondAttribute="bottom" constant="100" id="vBd-VX-hvx"/>
+                <constraint firstItem="fPD-da-nPD" firstAttribute="top" secondItem="gN2-ug-GR2" secondAttribute="bottom" constant="100" id="r4c-KF-ZF2"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="8DV-gu-Zwe" secondAttribute="trailing" constant="20" id="xbQ-dU-qfG"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
             <point key="canvasLocation" x="33.5" y="53.5"/>
         </view>
     </objects>
+    <resources>
+        <image name="doctor_refuse_bg" width="152" height="230"/>
+        <image name="refuse_back" width="66" height="54"/>
+    </resources>
 </document>
