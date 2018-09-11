@@ -8,6 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol InfoHeadViewDelegate <NSObject>
+
+- (void)InfoHeadViewToPickVc:(UIImagePickerController *)imagePickerController;
+- (void)InfoHeadViewDismiss:(UIImagePickerController *)imagePickerController;
+- (void)InfoHeadViewPresent:(UIAlertController *)alert;
+@end
 @interface InfoHeadView : UIView
 
+@property (nonatomic, strong) NSMutableArray *imageBase64Arr;
+
+@property (nonatomic, strong) NSMutableArray *imagesPath;
+
+@property (nonatomic, weak) id<InfoHeadViewDelegate> delegate;
 @end

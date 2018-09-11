@@ -74,6 +74,7 @@ static NSString *SicknessNameCellID = @"SicknessNameCellID";
     if (!cell) {
         cell = [[[NSBundle mainBundle] loadNibNamed:@"SicknessNameCell" owner:nil options:nil] firstObject];
     }
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     [cell refershViewWithData:_illnessNameArr[indexPath.row]];
 
     return cell;
@@ -91,6 +92,10 @@ static NSString *SicknessNameCellID = @"SicknessNameCellID";
     
 //    CGRect selfFrame = self.frame;
 //    selfFrame.size.height = self.HistoryillnessTableView.
+}
+
+- (void)dealloc {
+    [self.HistoryillnessTableView removeObserver:self forKeyPath:@"contentSize"];
 }
 
 - (UITableView *)HistoryillnessTableView

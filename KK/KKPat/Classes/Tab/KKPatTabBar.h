@@ -11,4 +11,6 @@
 @interface KKPatTabBar : UITabBar
 
 @property (nonatomic, strong) UIImageView *BgView;
+
+@property (nonatomic, strong) UIButton *centerBtn;
 @end

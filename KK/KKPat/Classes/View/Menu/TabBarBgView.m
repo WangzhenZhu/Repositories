@@ -42,7 +42,7 @@
     CGContextAddLineToPoint(context, x+w,y+h*0.5);
     CGContextAddLineToPoint(context,x+w*0.5, y);
     CGContextAddLineToPoint(context,x , y+h*0.5);
-    
+
     CGContextDrawPath(context, kCGPathFillStroke);
     
 }

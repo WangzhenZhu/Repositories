@@ -24,18 +24,20 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xri-vc-9gp">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xri-vc-9gp">
                     <rect key="frame" x="20" y="517" width="335" height="50"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="zfu-Wy-Jdu"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <state key="normal" title="登      录">
-                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="登      录" backgroundImage="login_able_btn">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <state key="disabled" title="登   录" backgroundImage="login_disable_btn">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
                 </button>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="请输入手机号码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="y8q-bG-GJ2">
-                    <rect key="frame" x="35" y="96" width="305" height="40"/>
+                    <rect key="frame" x="35" y="170" width="305" height="40"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="gek-2T-m1f"/>
                     </constraints>
@@ -44,7 +46,7 @@
                     <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                 </textField>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="请输入验证码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wy8-XR-xgR">
-                    <rect key="frame" x="35" y="171" width="170" height="40"/>
+                    <rect key="frame" x="35" y="245" width="170" height="40"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="170" id="CLA-ZG-4wV"/>
                         <constraint firstAttribute="height" constant="40" id="ZDn-xT-9rl"/>
@@ -54,10 +56,9 @@
                     <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                 </textField>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rox-oN-kqj">
-                    <rect key="frame" x="220" y="171" width="120" height="40"/>
+                    <rect key="frame" x="220" y="245" width="125" height="40"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="CCH-tY-g5Q"/>
-                        <constraint firstAttribute="width" constant="120" id="Ph8-dQ-e79"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                     <state key="normal" title="发送验证码">
@@ -65,7 +66,7 @@
                     </state>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WR0-2S-aY4">
-                    <rect key="frame" x="35" y="271" width="305" height="50"/>
+                    <rect key="frame" x="35" y="345" width="305" height="50"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="Zyo-BD-Rp3"/>
                     </constraints>
@@ -82,10 +83,11 @@
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="WR0-2S-aY4" secondAttribute="trailing" constant="35" id="BDb-ku-dsI"/>
                 <constraint firstItem="y8q-bG-GJ2" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="35" id="DBj-eY-5R3"/>
                 <constraint firstItem="xri-vc-9gp" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="DsS-ly-bh0"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="Rox-oN-kqj" secondAttribute="trailing" constant="30" id="HHP-nR-6oj"/>
                 <constraint firstItem="wy8-XR-xgR" firstAttribute="leading" secondItem="y8q-bG-GJ2" secondAttribute="leading" id="RQe-mR-j5W"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="xri-vc-9gp" secondAttribute="trailing" constant="20" id="TdX-bc-NGK"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="y8q-bG-GJ2" secondAttribute="trailing" constant="35" id="V9A-1H-reh"/>
-                <constraint firstItem="y8q-bG-GJ2" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="76" id="WiW-Xr-fbX"/>
+                <constraint firstItem="y8q-bG-GJ2" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="150" id="WiW-Xr-fbX"/>
                 <constraint firstItem="Rox-oN-kqj" firstAttribute="centerY" secondItem="wy8-XR-xgR" secondAttribute="centerY" id="YeV-4Z-rMY"/>
                 <constraint firstItem="Rox-oN-kqj" firstAttribute="leading" secondItem="wy8-XR-xgR" secondAttribute="trailing" constant="15" id="g6z-bo-NMq"/>
                 <constraint firstItem="wy8-XR-xgR" firstAttribute="top" secondItem="y8q-bG-GJ2" secondAttribute="bottom" constant="35" id="k24-ap-ek9"/>
@@ -96,6 +98,8 @@
         </view>
     </objects>
     <resources>
+        <image name="login_able_btn" width="320" height="44"/>
+        <image name="login_disable_btn" width="320" height="44"/>
         <image name="readDisclamer_login_img" width="25" height="25"/>
     </resources>
 </document>

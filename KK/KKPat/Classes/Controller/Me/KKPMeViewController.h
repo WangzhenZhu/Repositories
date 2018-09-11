@@ -8,6 +8,7 @@
 
 #import "KKPBaseViewController.h"
 
+#import <MapKit/MapKit.h>
 @interface KKPMeViewController : KKPBaseViewController
 
 @end

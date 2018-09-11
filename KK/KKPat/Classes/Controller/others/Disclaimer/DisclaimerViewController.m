@@ -18,6 +18,8 @@
 
 @property (weak, nonatomic) IBOutlet UIButton *backBtn;
 
+@property (weak, nonatomic) IBOutlet UILabel *refuseLab;
+@property (weak, nonatomic) IBOutlet UILabel *agreenLab;
 
 @end
 
@@ -30,6 +32,7 @@
     self.DisclaimerContrainer.layer.borderWidth = 1.0f;
     self.DisclaimerContrainer.layer.cornerRadius = 10.0f;
     self.DisclaimerContrainer.layer.masksToBounds = YES;
+    
     [self.backBtn addTarget:self action:@selector(backAction) forControlEvents:UIControlEventTouchUpInside];
     [self.RefuseBtn addTarget:self action:@selector(goToRefuseVc) forControlEvents:UIControlEventTouchUpInside];
     [self.AgreenBtn addTarget:self action:@selector(goToAgreenVc) forControlEvents:UIControlEventTouchUpInside];
@@ -37,9 +40,27 @@
     // Do any additional setup after loading the view from its nib.
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    if ([[KKUserDefaults sharedInstance]boolValueWithKey:@"IsAgreenDisclaime"]) {
+        self.AgreenBtn.hidden = YES;
+        self.RefuseBtn.hidden = YES;
+        self.refuseLab.hidden = YES;
+        self.agreenLab.hidden = YES;
+    }else
+    {
+        self.AgreenBtn.hidden = NO;
+        self.RefuseBtn.hidden = NO;
+        self.refuseLab.hidden = NO;
+        self.agreenLab.hidden = NO;
+    }
+}
+
 - (void)backAction
 {
     [self dismissViewControllerAnimated:YES completion:nil];
+    [self.navigationController popViewControllerAnimated:YES];
     
 }
 - (void)goToRefuseVc

@@ -13,7 +13,9 @@
 #import "KKConfiguration.h"
 #import <SMS_SDK/SMSSDK.h>
 #import "KKPatTabBarController.h"
-@interface LoginViewController ()<UITextFieldDelegate>
+#import "KKLoginManager.h"
+
+@interface LoginViewController ()<UITextFieldDelegate,KKAPIManagerParamSourceDelegate,KKAPIManagerApiCallBackDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextField *phoneNumberTextField;
 
@@ -24,6 +26,8 @@
 @property (weak, nonatomic) IBOutlet UIButton *ReadDisclaimer;
 
 @property (weak, nonatomic) IBOutlet UIButton *LoginBtn;
+
+@property (nonatomic, strong) KKLoginManager *LoginManager;
 
 
 @end
@@ -89,9 +93,12 @@
 //    self.ReadDisclaimer.imageEdgeInsets = UIEdgeInsetsMake(10, 10, 10, 60);
 //    self.ReadDisclaimer.titleEdgeInsets = UIEdgeInsetsMake(0, -20, 0, 0);
     //self.ReadStatusLab.textColor = RGB(255, 255, 255);
-
-    self.LoginBtn.layer.cornerRadius = 5.0f;
-    self.LoginBtn.layer.masksToBounds = YES;
+//
+//    self.LoginBtn.layer.cornerRadius = 5.0f;
+//    self.LoginBtn.layer.masksToBounds = YES;
+    self.LoginBtn.layer.shadowColor = RGBACG(0, 0, 0, 0.3);
+    self.LoginBtn.layer.shadowOffset = CGSizeMake(5, 10.0f);
+    self.LoginBtn.layer.shadowOpacity = YES;
     [self.LoginBtn addTarget:self action:@selector(goToVerification) forControlEvents: UIControlEventTouchUpInside];
     [self.LoginBtn setEnabled:NO];
     
@@ -102,13 +109,14 @@
     [super viewWillAppear:animated];
     if ([[KKUserDefaults sharedInstance] boolValueWithKey:@"IsAgreenDisclaime"]) {
         [self.LoginBtn setEnabled:YES];
-        self.LoginBtn.backgroundColor = ThemeColor;
+       // self.LoginBtn.backgroundColor = ThemeColor;
         [self.ReadDisclaimer setTitle:@"免责声明已阅读" forState:UIControlStateNormal];
         [self.ReadDisclaimer setImage:IMG(@"read_login_img") forState:UIControlStateNormal];
         [self.LoginBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     }else
     {
-        self.LoginBtn.backgroundColor = RGB(215, 215, 215);
+//        self.LoginBtn.backgroundColor = RGB(215, 215, 215);
+
         [self.LoginBtn setEnabled:NO];
         [self.ReadDisclaimer setTitle:@"请阅读免责声明" forState:UIControlStateNormal];
         [self.ReadDisclaimer setImage:IMG(@"readDisclamer_login_img") forState:UIControlStateNormal];
@@ -123,7 +131,15 @@
     [self.view endEditing:YES];
 }
 
+#pragma mark -- 数据加载
+- (void)loadData
+{
+    [SVProgressHUD show];
+    [self.LoginManager loadData];
+}
 
+
+#pragma mark - 阅读免责声明
 - (void)goReadDisclaimer
 {
     DisclaimerViewController *DisclamVc = [[DisclaimerViewController alloc] init];
@@ -161,48 +177,86 @@
     
 }
 
-
+#pragma mark --KKAPIManagerParamSourceDelegate
+- (NSDictionary *)paramForApi:(KKAPIBaseManager *)manager
+{
+    NSMutableDictionary *params = [NSMutableDictionary dictionary];
+    if ([manager isKindOfClass:[KKLoginManager class]]) {
+        [params setObject:self.phoneNumberTextField.text forKey:@"phone"];
+    }
+    return params;
+}
+#pragma mark -KKAPIManagerApiCallBackDelegate
+- (void)managerCallAPIDidSuccess:(KKAPIBaseManager *)manager
+{
+  
+    id responseData = manager.responseObject;
+    NSNumber *errorCode = [responseData objectForKey:@"code"];
+    if (errorCode && [errorCode integerValue] == 200) {
+        if ([responseData objectForKey:@"data"]) {
+            NSDictionary *dic = [[NSDictionary alloc] init];
+            dic = [responseData objectForKey:@"data"];
+            if ([dic objectForKey:@"token"]) {
+                [[KKUserDefaults sharedInstance] saveValue:[dic objectForKey:@"token"] forKey:@"Token"];
+//                NSString *tmpDir = NSTemporaryDirectory();
+//                NSLog(@"tmp----%@",tmpDir);
+                [SVProgressHUD dismiss];
+                EntryInfoViewController *EntryInfoVc = [[EntryInfoViewController alloc] init];
+                [self presentViewController:EntryInfoVc animated:YES completion:nil];
+            }
+        }
+    } else
+    {
+        [SVProgressHUD showInfoWithStatus:[responseData objectForKey:@"msg"]];
+    }
+}
+- (void)managerCallAPIDidFailed:(KKAPIBaseManager *)manager
+{
+     [SVProgressHUD showErrorWithStatus:manager.errorMessage];
+}
 
 #pragma mark --登录之前 判断手机号和验证码是否正确
 - (void)goToVerification
 {
-//    if ([NSString isEmpty:_phoneNumberTextField.text]) {
-//        [SVProgressHUD showInfoWithStatus:NSLocalizedStringFromTable(@"InputMobile", @"KKMed", nil)];
-//        return;
-//    }
-//
-//    if (![NSString isMobileNumber:_phoneNumberTextField.text])
-//    {
-//        [SVProgressHUD showInfoWithStatus:NSLocalizedStringFromTable(@"InPutMObileFailure", @"KKMed", nil)];
-//        return;
-//    }
-//
-//    if ([NSString isEmpty:_VerificationCodeTextField.text]) {
-//        [SVProgressHUD showInfoWithStatus:NSLocalizedStringFromTable(@"InputVerificationCode", @"KKMed", nil)];
-//        return;
-//    }
-//    if ([[KKUserDefaults sharedInstance] boolValueWithKey:@"isEntryInfo"]) {
-//
-//    }else
-//    {
-//        [SMSSDK commitVerificationCode:_VerificationCodeTextField.text phoneNumber:_phoneNumberTextField.text zone:@"86" result:^(NSError *error) {
-//
-//            if (!error)
-//            {
-                // 验证成功
-                EntryInfoViewController *EntryInfoVc = [[EntryInfoViewController alloc] init];
-                [self presentViewController:EntryInfoVc animated:YES completion:nil];
-//            }
-//            else
-//            {
-//               [SVProgressHUD showInfoWithStatus:NSLocalizedStringFromTable(@"InputVerificationCodeError", @"KKMed", nil)];
-//                // error
-//            }
-//        }];
-//
-//    }
-//
-//    KKPatTabBarController *KKPTabVc = [[KKPatTabBarController alloc] init];
+//    NSLog(@"____%@",self.phoneNumberTextField.text);
+    EntryInfoViewController *EntryInfoVc = [[EntryInfoViewController alloc] init];
+    [self presentViewController:EntryInfoVc animated:YES completion:nil];
+    if ([NSString isEmpty:_phoneNumberTextField.text]) {
+        [SVProgressHUD showInfoWithStatus:NSLocalizedStringFromTable(@"InputMobile", @"KKMed", nil)];
+        return;
+    }
+
+    if (![NSString isMobileNumber:_phoneNumberTextField.text])
+    {
+        [SVProgressHUD showInfoWithStatus:NSLocalizedStringFromTable(@"InPutMObileFailure", @"KKMed", nil)];
+        return;
+    }
+
+    if ([NSString isEmpty:_VerificationCodeTextField.text]) {
+        [SVProgressHUD showInfoWithStatus:NSLocalizedStringFromTable(@"InputVerificationCode", @"KKMed", nil)];
+        return;
+    }
+    if ([[KKUserDefaults sharedInstance] boolValueWithKey:@"isEntryInfo"]) {
+
+    }else
+    {
+        [SMSSDK commitVerificationCode:_VerificationCodeTextField.text phoneNumber:_phoneNumberTextField.text zone:@"86" result:^(NSError *error) {
+
+            if (!error)
+            {
+                // 验证码成功
+                [self loadData];
+            }
+            else
+            {
+               [SVProgressHUD showInfoWithStatus:NSLocalizedStringFromTable(@"InputVerificationCodeError", @"KKMed", nil)];
+                // error
+            }
+        }];
+
+    }
+
+    KKPatTabBarController *KKPTabVc = [[KKPatTabBarController alloc] init];
     
     
     
@@ -211,6 +265,7 @@
 #pragma mark --开启验证码倒计时
 - (void)startTiming
 {
+    self.SendCodeBtn.userInteractionEnabled = NO;
     __block NSInteger time = 59; //倒计时时间
     dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
     ;
@@ -235,5 +290,15 @@
     });
     //GCD定时器启动，默认是关闭的
     dispatch_resume(_timer);
+}
+
+- (KKLoginManager *)LoginManager
+{
+    if (!_LoginManager) {
+        _LoginManager = [[KKLoginManager alloc] init];
+        _LoginManager.delegate = self;
+        _LoginManager.paramsSource = self;
+    }
+    return _LoginManager;
 }
 @end

@@ -7,8 +7,8 @@
 //
 
 #import "KKPBaseViewController.h"
-
-@interface KKPBaseViewController ()
+#import "KKConfiguration.h"
+@interface KKPBaseViewController ()<UINavigationControllerDelegate>
 
 @end
 
@@ -16,23 +16,28 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.navigationController.delegate = self;
+    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
 
     // Do any additional setup after loading the view.
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark -- 设置导航栏返回的按钮图片
+- (void)navigationController:(UINavigationController *)navigationController willShowViewController:(UIViewController *)viewController animated:(BOOL)animated
+{
+    UIViewController *root = navigationController.viewControllers[0];
+    
+    if (root != viewController) {
+        UIBarButtonItem *itemleft = [[UIBarButtonItem alloc] initWithImage:IMG(@"back1_btn") style:UIBarButtonItemStylePlain target:self action:@selector(popAction:)];
+        viewController.navigationItem.leftBarButtonItem = itemleft;
+    }
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)popAction:(UIBarButtonItem *)barButtonItem
+{
+    [self.navigationController popViewControllerAnimated:YES];
 }
-*/
+
+
 
 @end

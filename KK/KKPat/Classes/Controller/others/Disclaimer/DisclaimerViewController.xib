@@ -16,7 +16,9 @@
                 <outlet property="DisclaimerContrainer" destination="JUM-0B-iwj" id="GmQ-ly-dwr"/>
                 <outlet property="DisclaimerTextView" destination="5Xg-aZ-b3v" id="4eA-1C-D0D"/>
                 <outlet property="RefuseBtn" destination="nyS-xc-Uvx" id="iUS-va-Rc5"/>
+                <outlet property="agreenLab" destination="O7Q-V1-SM9" id="I8e-52-yO4"/>
                 <outlet property="backBtn" destination="5e1-GY-lMZ" id="Ul9-F6-U2M"/>
+                <outlet property="refuseLab" destination="Z8x-bH-Zcn" id="tmK-yZ-Svz"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

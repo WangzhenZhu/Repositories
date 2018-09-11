@@ -14,11 +14,13 @@
 #import "KKPReservationViewController.h"
 #import "KKPOrdersViewController.h"
 #import "KKPMeViewController.h"
+#import "PrediagnosisViewController.h"
 
 #import "KKConfiguration.h"
 
+#import "SetingTimeAndPositionViewController.h"
 #import "KKPatTabBar.h"
-@interface KKPatTabBarController ()
+@interface KKPatTabBarController ()<UITabBarDelegate>
 
 @property (nonatomic , strong) KKPatTabBar *kkTb;
 @end
@@ -27,31 +29,38 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     //利用KVO来使用自定义的tabBar;
-    [self setValue:[[KKPatTabBar alloc] init] forKey:@"tabBar"];
+//    self.kkTb.centerBtn.backgroundColor = [UIColor redColor];
+    [self setValue:self.kkTb forKey:@"tabBar"];
 
-//    [self.tabBar setBackgroundImage:img];
-
-//    [self.tabBar setClipsToBounds:YES];
-//    [UITabBar appearance].translucent = NO;
-//    TabBarBgView *TBview = [[TabBarBgView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, 90)];
-//    [self.tabBar insertSubview:TBview atIndex:0];
-
-
-
-    [self.tabBar setBackgroundImage:IMG(@"tab_bg")];
+    [self cleanLine];
     [self addAllChildViewController];
     
-    // Do any additional setup after loading the view.
 }
 
-//- (void)viewWillLayoutSubviews
-//{
-//    CGRect tabFrame = self.tabBar.frame;
-//    tabFrame.size.height = 90;
-//    tabFrame.origin.y = self.view.frame.size.height - 90;
-//    self.tabBar.frame = tabFrame;
-//}
+- (void)clickCenterBtn:(UIButton *)sender
+{
+    PrediagnosisViewController  *PreVc = [[PrediagnosisViewController alloc] init];
+    PreVc.title = @"预诊";
+    KKPNavController *nav = [[KKPNavController alloc] initWithRootViewController:PreVc];
+    [self presentViewController:nav animated:YES completion:nil];
+//    SetingTimeAndPositionViewController *setVc = [[SetingTimeAndPositionViewController alloc] init];
+//     KKPNavController *nav = [[KKPNavController alloc] initWithRootViewController:setVc];
+//    [self presentViewController:nav animated:YES completion:nil];
+}
+//清除Tab线 加背景
+- (void)cleanLine
+{
+    UIImageView *bgV = [[UIImageView alloc] init];
+    bgV.image = IMG(@"tab_bg");
+    bgV.frame = CGRectMake(0, -41, ScreenWidth, 90);
+    [self.tabBar insertSubview:bgV atIndex:0];
+    self.tabBar.backgroundImage = [UIImage new];
+    self.tabBar.shadowImage = [UIImage new];
+    
+    
+}
 - (void)addAllChildViewController
 {
     KKPRealTimeViewController *realVc = [[KKPRealTimeViewController alloc] init];
@@ -79,6 +88,21 @@
 }
 
 
+- (void)tabBar:(UITabBar *)tabBar didSelectItem:(UITabBarItem *)item
+{
+    NSLog(@"llll");
+}
+
+
+
+- (KKPatTabBar *)kkTb
+{
+    if (!_kkTb) {
+        _kkTb = [[KKPatTabBar alloc] init];
+        [_kkTb.centerBtn addTarget:self action:@selector(clickCenterBtn:) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _kkTb;
+}
 /*
 #pragma mark - Navigation
 

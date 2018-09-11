@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface EntryInfoViewController : UIViewController
+@interface EntryInfoViewController : UIViewController 
 
 @end

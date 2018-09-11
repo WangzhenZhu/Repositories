@@ -21,19 +21,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GUi-S5-4S2">
-                                <rect key="frame" x="112.5" y="120" width="150" height="150"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchImage" translatesAutoresizingMaskIntoConstraints="NO" id="GUi-S5-4S2">
+                                <rect key="frame" x="136" y="120" width="103" height="114"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="5u1-mj-pfk"/>
-                                    <constraint firstAttribute="height" constant="150" id="u7e-vP-Wd5"/>
+                                    <constraint firstAttribute="width" constant="103" id="5u1-mj-pfk"/>
+                                    <constraint firstAttribute="height" constant="114" id="u7e-vP-Wd5"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="广告语广告语广告语广告语广告语广告语广告语广告语广告语广告语广告语广告语广告语广告语广告语" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EZs-Bb-2zp">
-                                <rect key="frame" x="18" y="320" width="339" height="100"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="广告语" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EZs-Bb-2zp">
+                                <rect key="frame" x="18" y="284" width="339" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="2Up-eI-0ab"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -54,4 +54,7 @@
             <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="launchImage" width="103" height="114"/>
+    </resources>
 </document>

@@ -37,7 +37,8 @@
                                     <constraint firstAttribute="width" constant="30" id="MHR-o5-WEe"/>
                                     <constraint firstAttribute="height" constant="30" id="aIY-eN-huN"/>
                                 </constraints>
-                                <state key="normal" title="错误" image="grayNight_entryInfo_icon"/>
+                                <state key="normal" backgroundImage="grayNight_entryInfo_icon"/>
+                                <state key="selected" backgroundImage="right_entryInfo_icon"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BCW-s8-rK9">
                                 <rect key="frame" x="10" y="53" width="300" height="1"/>
@@ -72,13 +73,15 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
             <connections>
+                <outlet property="SelectBtn" destination="7xy-B9-FaY" id="5I2-at-VcD"/>
                 <outlet property="SicknessNameBg" destination="Xeu-FV-5b8" id="ETX-Hy-ODZ"/>
                 <outlet property="SicknessNameLab" destination="Zg2-f1-6q1" id="7Pn-vO-i6E"/>
             </connections>
-            <point key="canvasLocation" x="34" y="117.5"/>
+            <point key="canvasLocation" x="-121" y="-14"/>
         </tableViewCell>
     </objects>
     <resources>
         <image name="grayNight_entryInfo_icon" width="28" height="28"/>
+        <image name="right_entryInfo_icon" width="28" height="28"/>
     </resources>
 </document>

@@ -7,6 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		212100E6210DC43000CF7A74 /* CustomImagePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 212100E5210DC43000CF7A74 /* CustomImagePickerViewController.m */; };
+		212100F4210FED3700CF7A74 /* KKPOrderedInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 212100F2210FED3700CF7A74 /* KKPOrderedInfoViewController.m */; };
+		212100F8210FF1BF00CF7A74 /* orderedInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 212100F7210FF1BF00CF7A74 /* orderedInfoView.m */; };
+		212100FA210FF1E600CF7A74 /* orderedInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 212100F9210FF1E600CF7A74 /* orderedInfoView.xib */; };
+		212100FF21104A7200CF7A74 /* messageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 212100FD21104A7200CF7A74 /* messageCell.m */; };
+		2121010021104A7200CF7A74 /* messageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 212100FE21104A7200CF7A74 /* messageCell.xib */; };
+		212101062110534400CF7A74 /* myPatientCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 212101042110534400CF7A74 /* myPatientCell.xib */; };
+		212101092110572800CF7A74 /* myPatientCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 212101082110572800CF7A74 /* myPatientCell.m */; };
+		2121010E2110A5DE00CF7A74 /* HumanIdentityCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 2121010D2110A5DE00CF7A74 /* HumanIdentityCard.m */; };
+		212101342112DD5400CF7A74 /* base64.txt in Resources */ = {isa = PBXBuildFile; fileRef = 212101332112DD5400CF7A74 /* base64.txt */; };
+		213025DD211EC17B0017FF48 /* SearchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 213025DC211EC17B0017FF48 /* SearchView.m */; };
+		213025DE211EC17B0017FF48 /* SearchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 213025DC211EC17B0017FF48 /* SearchView.m */; };
+		213025E2211FC47A0017FF48 /* SetingTimeAndPositionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 213025E1211FC47A0017FF48 /* SetingTimeAndPositionViewController.m */; };
+		213025E7211FC59F0017FF48 /* setingTimeAndPosition.m in Sources */ = {isa = PBXBuildFile; fileRef = 213025E6211FC59F0017FF48 /* setingTimeAndPosition.m */; };
+		213025E8211FC59F0017FF48 /* setingTimeAndPosition.m in Sources */ = {isa = PBXBuildFile; fileRef = 213025E6211FC59F0017FF48 /* setingTimeAndPosition.m */; };
+		213025EA211FC5C60017FF48 /* setingTimeAndPosition.xib in Resources */ = {isa = PBXBuildFile; fileRef = 213025E9211FC5C60017FF48 /* setingTimeAndPosition.xib */; };
+		213025EB211FC5C60017FF48 /* setingTimeAndPosition.xib in Resources */ = {isa = PBXBuildFile; fileRef = 213025E9211FC5C60017FF48 /* setingTimeAndPosition.xib */; };
 		2168979E20EBA5BD003A2DE0 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2168979D20EBA5BD003A2DE0 /* Info.plist */; };
 		216897A020EBA5C3003A2DE0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2168979F20EBA5C3003A2DE0 /* main.m */; };
 		216897A720EBA6E7003A2DE0 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 216897A520EBA6E7003A2DE0 /* Info.plist */; };
@@ -17,6 +34,17 @@
 		216897C220EBAB02003A2DE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 216897C120EBAB02003A2DE0 /* Assets.xcassets */; };
 		216897D720EBB125003A2DE0 /* KKPBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 216897D620EBB125003A2DE0 /* KKPBaseViewController.m */; };
 		216897E920EC6315003A2DE0 /* KKUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 216897E820EC6315003A2DE0 /* KKUserDefaults.m */; };
+		217912C6211A8F9B00DFC961 /* NSArray+KKNetworkingMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 2181473220F5B9520038133D /* NSArray+KKNetworkingMethods.m */; };
+		217912CA211AD02A00DFC961 /* MeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 217912C8211AD02A00DFC961 /* MeCell.m */; };
+		217912CB211AD02A00DFC961 /* MeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 217912C9211AD02A00DFC961 /* MeCell.xib */; };
+		217912CF211AE56000DFC961 /* MatchDoctorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 217912CE211AE55F00DFC961 /* MatchDoctorViewController.m */; };
+		217912D4211B042D00DFC961 /* matchDotorCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 217912D2211B042D00DFC961 /* matchDotorCell.m */; };
+		217912D5211B042D00DFC961 /* matchDotorCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 217912D3211B042D00DFC961 /* matchDotorCell.xib */; };
+		217912D8211B2C0000DFC961 /* acceptView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 217912D7211B2C0000DFC961 /* acceptView.xib */; };
+		217912DB211B2C1E00DFC961 /* acceptView.m in Sources */ = {isa = PBXBuildFile; fileRef = 217912DA211B2C1E00DFC961 /* acceptView.m */; };
+		217912DE211C0C7700DFC961 /* orderingInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 217912DD211C0C7700DFC961 /* orderingInfo.m */; };
+		217912E0211C0CA000DFC961 /* orderingInfo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 217912DF211C0CA000DFC961 /* orderingInfo.xib */; };
+		217912E3211D234E00DFC961 /* KKPOrderingInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 217912E2211D234E00DFC961 /* KKPOrderingInfoViewController.m */; };
 		2181472F20F4A1DE0038133D /* NetWorkingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2181472E20F4A1DE0038133D /* NetWorkingManager.m */; };
 		2181473320F5B9520038133D /* NSArray+KKNetworkingMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 2181473220F5B9520038133D /* NSArray+KKNetworkingMethods.m */; };
 		2181473620F5B9BF0038133D /* NSString+KKNetworkingMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 2181473520F5B9BF0038133D /* NSString+KKNetworkingMethods.m */; };
@@ -58,6 +86,11 @@
 		218147C220FD8F080038133D /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 218147C120FD8F080038133D /* libstdc++.tbd */; };
 		218147C620FDD4AA0038133D /* EntryInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 218147C520FDD4AA0038133D /* EntryInfoViewController.m */; };
 		218147F820FF27F40038133D /* illnessName.plist in Resources */ = {isa = PBXBuildFile; fileRef = 218147F720FF27F40038133D /* illnessName.plist */; };
+		218DE1BA21465A0900889BFC /* headQuestionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 218DE1B921465A0900889BFC /* headQuestionView.m */; };
+		218DE1BC21465CD700889BFC /* headQuestionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 218DE1BB21465CD700889BFC /* headQuestionView.xib */; };
+		218DE1C0214682C300889BFC /* PrediagnosisAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 218DE1BF214682C300889BFC /* PrediagnosisAPIManager.m */; };
+		218DE1C42146A18000889BFC /* KKFetchQuestionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 218DE1C32146A18000889BFC /* KKFetchQuestionManager.m */; };
+		218DE1C72146A26D00889BFC /* PreParamModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 218DE1C62146A26D00889BFC /* PreParamModel.m */; };
 		21A9792721002697006AE1BF /* Historyillness.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A9792621002697006AE1BF /* Historyillness.m */; };
 		21A9792D21002FA9006AE1BF /* UpDownSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A9792C21002FA9006AE1BF /* UpDownSelectView.m */; };
 		21A97938210063C2006AE1BF /* InfoHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21A97937210063C2006AE1BF /* InfoHeadView.xib */; };
@@ -72,11 +105,112 @@
 		21A979652102DB29006AE1BF /* KKPMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A979642102DB29006AE1BF /* KKPMeViewController.m */; };
 		21A979682102DF8B006AE1BF /* KKPNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A979672102DF8B006AE1BF /* KKPNavController.m */; };
 		21A97A1821074498006AE1BF /* TabBarBgView.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A97A1721074498006AE1BF /* TabBarBgView.m */; };
+		21CCFD43213794A300DB0505 /* womenBackView.m in Sources */ = {isa = PBXBuildFile; fileRef = 21CCFD42213794A300DB0505 /* womenBackView.m */; };
+		21CCFD45213794BE00DB0505 /* menBackView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21CCFD44213794BE00DB0505 /* menBackView.xib */; };
+		21CCFD482137A31700DB0505 /* menBackView.m in Sources */ = {isa = PBXBuildFile; fileRef = 21CCFD472137A31700DB0505 /* menBackView.m */; };
+		21CCFD4A2137A32C00DB0505 /* womenBackView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21CCFD492137A32C00DB0505 /* womenBackView.xib */; };
+		21CCFD502138199400DB0505 /* RequestPreAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 21CCFD4F2138199400DB0505 /* RequestPreAPIManager.m */; };
+		21CCFD7A213BA38100DB0505 /* OrganListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21CCFD79213BA38100DB0505 /* OrganListViewController.m */; };
+		21CCFD7D213D6C0500DB0505 /* SymtomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 21CCFD7C213D6C0400DB0505 /* SymtomCell.m */; };
+		21CCFD80213E6F8200DB0505 /* consultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21CCFD7F213E6F8200DB0505 /* consultViewController.m */; };
+		21CCFD86213E83F300DB0505 /* singleSelectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 21CCFD85213E83F300DB0505 /* singleSelectionCell.m */; };
+		21CCFD89213E847000DB0505 /* multiSelectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 21CCFD88213E847000DB0505 /* multiSelectionCell.m */; };
+		21CCFD8F213EB79900DB0505 /* answerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 21CCFD8E213EB79900DB0505 /* answerCell.m */; };
+		21CCFD92213EBDFC00DB0505 /* valueEntryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 21CCFD91213EBDFC00DB0505 /* valueEntryCell.m */; };
+		21CCFD96213F66F700DB0505 /* questionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 21CCFD95213F66F700DB0505 /* questionModel.m */; };
+		21CCFD99213F76EA00DB0505 /* question.plist in Resources */ = {isa = PBXBuildFile; fileRef = 21CCFD98213F76EA00DB0505 /* question.plist */; };
+		21CCFD9C213F8CE100DB0505 /* entrieModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 21CCFD9B213F8CE100DB0505 /* entrieModel.m */; };
+		21CCFD9F213F901F00DB0505 /* answersModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 21CCFD9E213F901F00DB0505 /* answersModel.m */; };
+		21D2E9F22130FB3600435BB0 /* KKRealDoctorListManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 21D2E9F12130FB3600435BB0 /* KKRealDoctorListManager.m */; };
+		21D2E9F52132932C00435BB0 /* KKSearchDoctorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 21D2E9F42132932C00435BB0 /* KKSearchDoctorManager.m */; };
+		21D2E9F721330BAB00435BB0 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 21D2E9F621330BAB00435BB0 /* libresolv.tbd */; };
+		21D2E9F921330BC600435BB0 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21D2E9F821330BC600435BB0 /* CoreTelephony.framework */; };
+		21D2E9FB21330BDA00435BB0 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21D2E9FA21330BDA00435BB0 /* SystemConfiguration.framework */; };
+		21D2E9FE2133E55400435BB0 /* PrediagnosisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21D2E9FD2133E55400435BB0 /* PrediagnosisViewController.m */; };
+		21D2EA012134F41900435BB0 /* chooseOrganView.m in Sources */ = {isa = PBXBuildFile; fileRef = 21D2EA002134F41900435BB0 /* chooseOrganView.m */; };
+		21D2EA032134F44300435BB0 /* chooseOrganView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21D2EA022134F44300435BB0 /* chooseOrganView.xib */; };
+		21D2EA0721363A3400435BB0 /* womenFrontOrganView.m in Sources */ = {isa = PBXBuildFile; fileRef = 21D2EA0621363A3400435BB0 /* womenFrontOrganView.m */; };
+		21D2EA0921363AB600435BB0 /* womenFrontOrganView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21D2EA0821363AB600435BB0 /* womenFrontOrganView.xib */; };
+		21D7CC1A21205E3B00C95062 /* TimeSelect.m in Sources */ = {isa = PBXBuildFile; fileRef = 21D7CC1921205E3B00C95062 /* TimeSelect.m */; };
+		21D7CC1E21205E6E00C95062 /* TimeSelect.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21D7CC1D21205E6E00C95062 /* TimeSelect.xib */; };
+		21D7CC4321211E6B00C95062 /* KKPopupView.m in Sources */ = {isa = PBXBuildFile; fileRef = 21D7CC4221211E6B00C95062 /* KKPopupView.m */; };
+		21D7CCA5212313C500C95062 /* MedicalRecordsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 21D7CCA4212313C500C95062 /* MedicalRecordsView.m */; };
+		21D7CCA7212313E600C95062 /* MedicalRecordsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21D7CCA6212313E600C95062 /* MedicalRecordsView.xib */; };
+		21D7CCA8212313E600C95062 /* MedicalRecordsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21D7CCA6212313E600C95062 /* MedicalRecordsView.xib */; };
+		21D7CCAC2123CBBF00C95062 /* KKEditMedicalRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21D7CCAB2123CBBF00C95062 /* KKEditMedicalRecordViewController.m */; };
+		21D7CCAD2123CBBF00C95062 /* KKEditMedicalRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21D7CCAB2123CBBF00C95062 /* KKEditMedicalRecordViewController.m */; };
+		21D7CCB321242F4200C95062 /* myDoctorCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 21D7CCB121242F4200C95062 /* myDoctorCell.m */; };
+		21D7CCB421242F4200C95062 /* myDoctorCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 21D7CCB121242F4200C95062 /* myDoctorCell.m */; };
+		21D7CCB521242F4200C95062 /* myDoctorCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21D7CCB221242F4200C95062 /* myDoctorCell.xib */; };
+		21D7CCB621242F4200C95062 /* myDoctorCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21D7CCB221242F4200C95062 /* myDoctorCell.xib */; };
+		21D7CCDC21244A2100C95062 /* SetingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 21D7CCDA21244A2100C95062 /* SetingCell.m */; };
+		21D7CCDD21244A2100C95062 /* SetingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 21D7CCDA21244A2100C95062 /* SetingCell.m */; };
+		21D7CCDE21244A2100C95062 /* SetingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21D7CCDB21244A2100C95062 /* SetingCell.xib */; };
+		21D7CCDF21244A2100C95062 /* SetingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21D7CCDB21244A2100C95062 /* SetingCell.xib */; };
+		21D7CCE12124649400C95062 /* instruction.txt in Resources */ = {isa = PBXBuildFile; fileRef = 21D7CCE02124649400C95062 /* instruction.txt */; };
+		21D7CCE22124649400C95062 /* instruction.txt in Resources */ = {isa = PBXBuildFile; fileRef = 21D7CCE02124649400C95062 /* instruction.txt */; };
+		21DD208B2129B3C0008BB9D8 /* SetingTimeAndPositionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 213025E1211FC47A0017FF48 /* SetingTimeAndPositionViewController.m */; };
+		21DD208E2129B766008BB9D8 /* AMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21DD208D2129B766008BB9D8 /* AMapViewController.m */; };
+		21DD2092212C284C008BB9D8 /* KKLoginManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 21DD2091212C284C008BB9D8 /* KKLoginManager.m */; };
+		21DD2096212CED0F008BB9D8 /* KKEntryInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 21DD2095212CED0F008BB9D8 /* KKEntryInfo.m */; };
+		21DD2099212CF398008BB9D8 /* KKEntryInfoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 21DD2098212CF398008BB9D8 /* KKEntryInfoManager.m */; };
+		21DD209C212FECE2008BB9D8 /* realDoctorModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 21DD209B212FECE2008BB9D8 /* realDoctorModel.m */; };
+		21FB12DA210828B300EA40B9 /* RealTimeDoctorCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 21FB12D8210828B300EA40B9 /* RealTimeDoctorCell.m */; };
+		21FB12DB210828B300EA40B9 /* RealTimeDoctorCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21FB12D9210828B300EA40B9 /* RealTimeDoctorCell.xib */; };
+		21FB12E0210866EC00EA40B9 /* reservationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 21FB12DE210866EC00EA40B9 /* reservationCell.m */; };
+		21FB12E32108670800EA40B9 /* reservationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21FB12E22108670800EA40B9 /* reservationCell.xib */; };
+		21FB12EA21087E1700EA40B9 /* orderHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 21FB12E921087E1700EA40B9 /* orderHeadView.m */; };
+		21FB12ED21088F3A00EA40B9 /* OrderingCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 21FB12EC21088F3A00EA40B9 /* OrderingCollectionCell.m */; };
+		21FB12F021088F5500EA40B9 /* orderedCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 21FB12EF21088F5500EA40B9 /* orderedCollectionCell.m */; };
+		21FB12F42109752D00EA40B9 /* orderedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 21FB12F22109752D00EA40B9 /* orderedCell.m */; };
+		21FB12F52109752D00EA40B9 /* orderedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21FB12F32109752D00EA40B9 /* orderedCell.xib */; };
+		21FB12F92109754800EA40B9 /* orderingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 21FB12F72109754800EA40B9 /* orderingCell.m */; };
+		21FB12FA2109754800EA40B9 /* orderingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21FB12F82109754800EA40B9 /* orderingCell.xib */; };
+		21FB13042109C4EA00EA40B9 /* meHeadCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 21FB13022109C4EA00EA40B9 /* meHeadCell.m */; };
+		21FB13052109C4EA00EA40B9 /* meHeadCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21FB13032109C4EA00EA40B9 /* meHeadCell.xib */; };
+		21FB13092109C57C00EA40B9 /* loginOutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 21FB13072109C57C00EA40B9 /* loginOutCell.m */; };
+		21FB130A2109C57C00EA40B9 /* loginOutCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21FB13082109C57C00EA40B9 /* loginOutCell.xib */; };
+		21FB130D2109E82800EA40B9 /* KKPMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21FB130C2109E82800EA40B9 /* KKPMessageViewController.m */; };
+		21FB13132109E9A600EA40B9 /* KKPMedicalRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21FB13122109E9A600EA40B9 /* KKPMedicalRecordViewController.m */; };
+		21FB13162109E9C000EA40B9 /* KKPMyDoctorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21FB13152109E9C000EA40B9 /* KKPMyDoctorViewController.m */; };
+		21FB13192109E9D400EA40B9 /* KKPSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21FB13182109E9D400EA40B9 /* KKPSettingViewController.m */; };
+		21FB131C2109EAF100EA40B9 /* KKPInstructionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21FB131B2109EAF100EA40B9 /* KKPInstructionsViewController.m */; };
+		21FB131F2109EB6600EA40B9 /* KKPFeedbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21FB131E2109EB6600EA40B9 /* KKPFeedbackViewController.m */; };
+		21FB13222109EB9400EA40B9 /* KKPAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21FB13212109EB9400EA40B9 /* KKPAboutViewController.m */; };
+		21FB13252109ECA800EA40B9 /* KKPMyPatientViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21FB13242109ECA800EA40B9 /* KKPMyPatientViewController.m */; };
+		21FB1329210BFBA700EA40B9 /* KKPDoctorInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21FB1328210BFBA700EA40B9 /* KKPDoctorInfoViewController.m */; };
+		21FB132D210BFED000EA40B9 /* doctorInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 21FB132C210BFED000EA40B9 /* doctorInfoView.m */; };
+		21FB132F210BFEE500EA40B9 /* doctorInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21FB132E210BFEE500EA40B9 /* doctorInfoView.xib */; };
+		21FCFB70214025FD0070BB15 /* SingleSelectButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 21FCFB6F214025FD0070BB15 /* SingleSelectButton.m */; };
+		21FCFB732142756C0070BB15 /* conclusionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 21FCFB722142756C0070BB15 /* conclusionModel.m */; };
 		26D84CE629B7CBF7E993F394 /* libPods-KKDoc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C69FE6D56A94AE8E7490851A /* libPods-KKDoc.a */; };
 		BA545FA52363374FF3E144EB /* libPods-KKPat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 88198D1A6AF92FDE15D65326 /* libPods-KKPat.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		212100E4210DC43000CF7A74 /* CustomImagePickerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomImagePickerViewController.h; sourceTree = "<group>"; };
+		212100E5210DC43000CF7A74 /* CustomImagePickerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomImagePickerViewController.m; sourceTree = "<group>"; };
+		212100F1210FED3700CF7A74 /* KKPOrderedInfoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKPOrderedInfoViewController.h; sourceTree = "<group>"; };
+		212100F2210FED3700CF7A74 /* KKPOrderedInfoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKPOrderedInfoViewController.m; sourceTree = "<group>"; };
+		212100F6210FF1BF00CF7A74 /* orderedInfoView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = orderedInfoView.h; sourceTree = "<group>"; };
+		212100F7210FF1BF00CF7A74 /* orderedInfoView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = orderedInfoView.m; sourceTree = "<group>"; };
+		212100F9210FF1E600CF7A74 /* orderedInfoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = orderedInfoView.xib; sourceTree = "<group>"; };
+		212100FC21104A7200CF7A74 /* messageCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = messageCell.h; sourceTree = "<group>"; };
+		212100FD21104A7200CF7A74 /* messageCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = messageCell.m; sourceTree = "<group>"; };
+		212100FE21104A7200CF7A74 /* messageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = messageCell.xib; sourceTree = "<group>"; };
+		212101042110534400CF7A74 /* myPatientCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = myPatientCell.xib; sourceTree = "<group>"; };
+		212101072110572800CF7A74 /* myPatientCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = myPatientCell.h; sourceTree = "<group>"; };
+		212101082110572800CF7A74 /* myPatientCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = myPatientCell.m; sourceTree = "<group>"; };
+		2121010C2110A5DE00CF7A74 /* HumanIdentityCard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HumanIdentityCard.h; sourceTree = "<group>"; };
+		2121010D2110A5DE00CF7A74 /* HumanIdentityCard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HumanIdentityCard.m; sourceTree = "<group>"; };
+		212101332112DD5400CF7A74 /* base64.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = base64.txt; sourceTree = "<group>"; };
+		213025DB211EC17B0017FF48 /* SearchView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchView.h; sourceTree = "<group>"; };
+		213025DC211EC17B0017FF48 /* SearchView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchView.m; sourceTree = "<group>"; };
+		213025E0211FC47A0017FF48 /* SetingTimeAndPositionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SetingTimeAndPositionViewController.h; sourceTree = "<group>"; };
+		213025E1211FC47A0017FF48 /* SetingTimeAndPositionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SetingTimeAndPositionViewController.m; sourceTree = "<group>"; };
+		213025E5211FC59F0017FF48 /* setingTimeAndPosition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = setingTimeAndPosition.h; sourceTree = "<group>"; };
+		213025E6211FC59F0017FF48 /* setingTimeAndPosition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = setingTimeAndPosition.m; sourceTree = "<group>"; };
+		213025E9211FC5C60017FF48 /* setingTimeAndPosition.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = setingTimeAndPosition.xib; sourceTree = "<group>"; };
 		2168977C20EBA298003A2DE0 /* KKDoc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KKDoc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2168978B20EBA2B3003A2DE0 /* KKPat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KKPat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2168979D20EBA5BD003A2DE0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "KKPat/Supporting Files/Info.plist"; sourceTree = SOURCE_ROOT; };
@@ -93,6 +227,22 @@
 		216897D620EBB125003A2DE0 /* KKPBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKPBaseViewController.m; sourceTree = "<group>"; };
 		216897E720EC6315003A2DE0 /* KKUserDefaults.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKUserDefaults.h; sourceTree = "<group>"; };
 		216897E820EC6315003A2DE0 /* KKUserDefaults.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKUserDefaults.m; sourceTree = "<group>"; };
+		217912C7211AD02A00DFC961 /* MeCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MeCell.h; sourceTree = "<group>"; };
+		217912C8211AD02A00DFC961 /* MeCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeCell.m; sourceTree = "<group>"; };
+		217912C9211AD02A00DFC961 /* MeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MeCell.xib; sourceTree = "<group>"; };
+		217912CD211AE55F00DFC961 /* MatchDoctorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MatchDoctorViewController.h; sourceTree = "<group>"; };
+		217912CE211AE55F00DFC961 /* MatchDoctorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MatchDoctorViewController.m; sourceTree = "<group>"; };
+		217912D1211B042D00DFC961 /* matchDotorCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = matchDotorCell.h; sourceTree = "<group>"; };
+		217912D2211B042D00DFC961 /* matchDotorCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = matchDotorCell.m; sourceTree = "<group>"; };
+		217912D3211B042D00DFC961 /* matchDotorCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = matchDotorCell.xib; sourceTree = "<group>"; };
+		217912D7211B2C0000DFC961 /* acceptView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = acceptView.xib; sourceTree = "<group>"; };
+		217912D9211B2C1E00DFC961 /* acceptView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = acceptView.h; sourceTree = "<group>"; };
+		217912DA211B2C1E00DFC961 /* acceptView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = acceptView.m; sourceTree = "<group>"; };
+		217912DC211C0C7700DFC961 /* orderingInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = orderingInfo.h; sourceTree = "<group>"; };
+		217912DD211C0C7700DFC961 /* orderingInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = orderingInfo.m; sourceTree = "<group>"; };
+		217912DF211C0CA000DFC961 /* orderingInfo.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = orderingInfo.xib; sourceTree = "<group>"; };
+		217912E1211D234E00DFC961 /* KKPOrderingInfoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKPOrderingInfoViewController.h; sourceTree = "<group>"; };
+		217912E2211D234E00DFC961 /* KKPOrderingInfoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKPOrderingInfoViewController.m; sourceTree = "<group>"; };
 		2181472820F4903E0038133D /* KKColors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKColors.h; sourceTree = "<group>"; };
 		2181472920F491B90038133D /* KKImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKImage.h; sourceTree = "<group>"; };
 		2181472A20F492A90038133D /* KKNetworkingConfiguration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKNetworkingConfiguration.h; sourceTree = "<group>"; };
@@ -136,6 +286,16 @@
 		218147C420FDD4AA0038133D /* EntryInfoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EntryInfoViewController.h; sourceTree = "<group>"; };
 		218147C520FDD4AA0038133D /* EntryInfoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EntryInfoViewController.m; sourceTree = "<group>"; };
 		218147F720FF27F40038133D /* illnessName.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = illnessName.plist; sourceTree = "<group>"; };
+		218DE1B821465A0900889BFC /* headQuestionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = headQuestionView.h; sourceTree = "<group>"; };
+		218DE1B921465A0900889BFC /* headQuestionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = headQuestionView.m; sourceTree = "<group>"; };
+		218DE1BB21465CD700889BFC /* headQuestionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = headQuestionView.xib; sourceTree = "<group>"; };
+		218DE1BE214682C300889BFC /* PrediagnosisAPIManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrediagnosisAPIManager.h; sourceTree = "<group>"; };
+		218DE1BF214682C300889BFC /* PrediagnosisAPIManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrediagnosisAPIManager.m; sourceTree = "<group>"; };
+		218DE1C1214683D800889BFC /* APIConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APIConfig.h; sourceTree = "<group>"; };
+		218DE1C22146A18000889BFC /* KKFetchQuestionManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKFetchQuestionManager.h; sourceTree = "<group>"; };
+		218DE1C32146A18000889BFC /* KKFetchQuestionManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKFetchQuestionManager.m; sourceTree = "<group>"; };
+		218DE1C52146A26D00889BFC /* PreParamModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PreParamModel.h; sourceTree = "<group>"; };
+		218DE1C62146A26D00889BFC /* PreParamModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PreParamModel.m; sourceTree = "<group>"; };
 		21A9792521002697006AE1BF /* Historyillness.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Historyillness.h; sourceTree = "<group>"; };
 		21A9792621002697006AE1BF /* Historyillness.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Historyillness.m; sourceTree = "<group>"; };
 		21A9792B21002FA9006AE1BF /* UpDownSelectView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UpDownSelectView.h; sourceTree = "<group>"; };
@@ -162,6 +322,126 @@
 		21A979672102DF8B006AE1BF /* KKPNavController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKPNavController.m; sourceTree = "<group>"; };
 		21A97A1621074498006AE1BF /* TabBarBgView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBarBgView.h; sourceTree = "<group>"; };
 		21A97A1721074498006AE1BF /* TabBarBgView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabBarBgView.m; sourceTree = "<group>"; };
+		21CCFD41213794A300DB0505 /* womenBackView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = womenBackView.h; sourceTree = "<group>"; };
+		21CCFD42213794A300DB0505 /* womenBackView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = womenBackView.m; sourceTree = "<group>"; };
+		21CCFD44213794BE00DB0505 /* menBackView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = menBackView.xib; sourceTree = "<group>"; };
+		21CCFD462137A31700DB0505 /* menBackView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = menBackView.h; sourceTree = "<group>"; };
+		21CCFD472137A31700DB0505 /* menBackView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = menBackView.m; sourceTree = "<group>"; };
+		21CCFD492137A32C00DB0505 /* womenBackView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = womenBackView.xib; sourceTree = "<group>"; };
+		21CCFD4E2138199400DB0505 /* RequestPreAPIManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RequestPreAPIManager.h; sourceTree = "<group>"; };
+		21CCFD4F2138199400DB0505 /* RequestPreAPIManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RequestPreAPIManager.m; sourceTree = "<group>"; };
+		21CCFD78213BA38100DB0505 /* OrganListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrganListViewController.h; sourceTree = "<group>"; };
+		21CCFD79213BA38100DB0505 /* OrganListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrganListViewController.m; sourceTree = "<group>"; };
+		21CCFD7B213D6C0400DB0505 /* SymtomCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SymtomCell.h; sourceTree = "<group>"; };
+		21CCFD7C213D6C0400DB0505 /* SymtomCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SymtomCell.m; sourceTree = "<group>"; };
+		21CCFD7E213E6F8200DB0505 /* consultViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = consultViewController.h; sourceTree = "<group>"; };
+		21CCFD7F213E6F8200DB0505 /* consultViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = consultViewController.m; sourceTree = "<group>"; };
+		21CCFD84213E83F300DB0505 /* singleSelectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = singleSelectionCell.h; sourceTree = "<group>"; };
+		21CCFD85213E83F300DB0505 /* singleSelectionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = singleSelectionCell.m; sourceTree = "<group>"; };
+		21CCFD87213E847000DB0505 /* multiSelectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = multiSelectionCell.h; sourceTree = "<group>"; };
+		21CCFD88213E847000DB0505 /* multiSelectionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = multiSelectionCell.m; sourceTree = "<group>"; };
+		21CCFD8D213EB79900DB0505 /* answerCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = answerCell.h; sourceTree = "<group>"; };
+		21CCFD8E213EB79900DB0505 /* answerCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = answerCell.m; sourceTree = "<group>"; };
+		21CCFD90213EBDFC00DB0505 /* valueEntryCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = valueEntryCell.h; sourceTree = "<group>"; };
+		21CCFD91213EBDFC00DB0505 /* valueEntryCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = valueEntryCell.m; sourceTree = "<group>"; };
+		21CCFD94213F66F700DB0505 /* questionModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = questionModel.h; sourceTree = "<group>"; };
+		21CCFD95213F66F700DB0505 /* questionModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = questionModel.m; sourceTree = "<group>"; };
+		21CCFD98213F76EA00DB0505 /* question.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = question.plist; sourceTree = "<group>"; };
+		21CCFD9A213F8CE100DB0505 /* entrieModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = entrieModel.h; sourceTree = "<group>"; };
+		21CCFD9B213F8CE100DB0505 /* entrieModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = entrieModel.m; sourceTree = "<group>"; };
+		21CCFD9D213F901F00DB0505 /* answersModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = answersModel.h; sourceTree = "<group>"; };
+		21CCFD9E213F901F00DB0505 /* answersModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = answersModel.m; sourceTree = "<group>"; };
+		21D2E9F02130FB3600435BB0 /* KKRealDoctorListManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKRealDoctorListManager.h; sourceTree = "<group>"; };
+		21D2E9F12130FB3600435BB0 /* KKRealDoctorListManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKRealDoctorListManager.m; sourceTree = "<group>"; };
+		21D2E9F32132932C00435BB0 /* KKSearchDoctorManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKSearchDoctorManager.h; sourceTree = "<group>"; };
+		21D2E9F42132932C00435BB0 /* KKSearchDoctorManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKSearchDoctorManager.m; sourceTree = "<group>"; };
+		21D2E9F621330BAB00435BB0 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
+		21D2E9F821330BC600435BB0 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		21D2E9FA21330BDA00435BB0 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		21D2E9FC2133E55400435BB0 /* PrediagnosisViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrediagnosisViewController.h; sourceTree = "<group>"; };
+		21D2E9FD2133E55400435BB0 /* PrediagnosisViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrediagnosisViewController.m; sourceTree = "<group>"; };
+		21D2E9FF2134F41900435BB0 /* chooseOrganView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = chooseOrganView.h; sourceTree = "<group>"; };
+		21D2EA002134F41900435BB0 /* chooseOrganView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = chooseOrganView.m; sourceTree = "<group>"; };
+		21D2EA022134F44300435BB0 /* chooseOrganView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = chooseOrganView.xib; sourceTree = "<group>"; };
+		21D2EA0521363A3400435BB0 /* womenFrontOrganView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = womenFrontOrganView.h; sourceTree = "<group>"; };
+		21D2EA0621363A3400435BB0 /* womenFrontOrganView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = womenFrontOrganView.m; sourceTree = "<group>"; };
+		21D2EA0821363AB600435BB0 /* womenFrontOrganView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = womenFrontOrganView.xib; sourceTree = "<group>"; };
+		21D7CC1821205E3B00C95062 /* TimeSelect.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimeSelect.h; sourceTree = "<group>"; };
+		21D7CC1921205E3B00C95062 /* TimeSelect.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimeSelect.m; sourceTree = "<group>"; };
+		21D7CC1D21205E6E00C95062 /* TimeSelect.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimeSelect.xib; sourceTree = "<group>"; };
+		21D7CC4121211E6B00C95062 /* KKPopupView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKPopupView.h; sourceTree = "<group>"; };
+		21D7CC4221211E6B00C95062 /* KKPopupView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKPopupView.m; sourceTree = "<group>"; };
+		21D7CCA3212313C500C95062 /* MedicalRecordsView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MedicalRecordsView.h; sourceTree = "<group>"; };
+		21D7CCA4212313C500C95062 /* MedicalRecordsView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MedicalRecordsView.m; sourceTree = "<group>"; };
+		21D7CCA6212313E600C95062 /* MedicalRecordsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MedicalRecordsView.xib; sourceTree = "<group>"; };
+		21D7CCAA2123CBBF00C95062 /* KKEditMedicalRecordViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKEditMedicalRecordViewController.h; sourceTree = "<group>"; };
+		21D7CCAB2123CBBF00C95062 /* KKEditMedicalRecordViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKEditMedicalRecordViewController.m; sourceTree = "<group>"; };
+		21D7CCB021242F4200C95062 /* myDoctorCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = myDoctorCell.h; sourceTree = "<group>"; };
+		21D7CCB121242F4200C95062 /* myDoctorCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = myDoctorCell.m; sourceTree = "<group>"; };
+		21D7CCB221242F4200C95062 /* myDoctorCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = myDoctorCell.xib; sourceTree = "<group>"; };
+		21D7CCD921244A2000C95062 /* SetingCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SetingCell.h; sourceTree = "<group>"; };
+		21D7CCDA21244A2100C95062 /* SetingCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SetingCell.m; sourceTree = "<group>"; };
+		21D7CCDB21244A2100C95062 /* SetingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SetingCell.xib; sourceTree = "<group>"; };
+		21D7CCE02124649400C95062 /* instruction.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = instruction.txt; sourceTree = "<group>"; };
+		21DD208C2129B766008BB9D8 /* AMapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMapViewController.h; sourceTree = "<group>"; };
+		21DD208D2129B766008BB9D8 /* AMapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMapViewController.m; sourceTree = "<group>"; };
+		21DD2090212C284C008BB9D8 /* KKLoginManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKLoginManager.h; sourceTree = "<group>"; };
+		21DD2091212C284C008BB9D8 /* KKLoginManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKLoginManager.m; sourceTree = "<group>"; };
+		21DD2094212CED0F008BB9D8 /* KKEntryInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKEntryInfo.h; sourceTree = "<group>"; };
+		21DD2095212CED0F008BB9D8 /* KKEntryInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKEntryInfo.m; sourceTree = "<group>"; };
+		21DD2097212CF398008BB9D8 /* KKEntryInfoManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKEntryInfoManager.h; sourceTree = "<group>"; };
+		21DD2098212CF398008BB9D8 /* KKEntryInfoManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKEntryInfoManager.m; sourceTree = "<group>"; };
+		21DD209A212FECE2008BB9D8 /* realDoctorModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = realDoctorModel.h; sourceTree = "<group>"; };
+		21DD209B212FECE2008BB9D8 /* realDoctorModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = realDoctorModel.m; sourceTree = "<group>"; };
+		21FB12D7210828B300EA40B9 /* RealTimeDoctorCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RealTimeDoctorCell.h; sourceTree = "<group>"; };
+		21FB12D8210828B300EA40B9 /* RealTimeDoctorCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RealTimeDoctorCell.m; sourceTree = "<group>"; };
+		21FB12D9210828B300EA40B9 /* RealTimeDoctorCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RealTimeDoctorCell.xib; sourceTree = "<group>"; };
+		21FB12DD210866EC00EA40B9 /* reservationCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = reservationCell.h; sourceTree = "<group>"; };
+		21FB12DE210866EC00EA40B9 /* reservationCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = reservationCell.m; sourceTree = "<group>"; };
+		21FB12E22108670800EA40B9 /* reservationCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = reservationCell.xib; sourceTree = "<group>"; };
+		21FB12E821087E1700EA40B9 /* orderHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = orderHeadView.h; sourceTree = "<group>"; };
+		21FB12E921087E1700EA40B9 /* orderHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = orderHeadView.m; sourceTree = "<group>"; };
+		21FB12EB21088F3A00EA40B9 /* OrderingCollectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrderingCollectionCell.h; sourceTree = "<group>"; };
+		21FB12EC21088F3A00EA40B9 /* OrderingCollectionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrderingCollectionCell.m; sourceTree = "<group>"; };
+		21FB12EE21088F5500EA40B9 /* orderedCollectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = orderedCollectionCell.h; sourceTree = "<group>"; };
+		21FB12EF21088F5500EA40B9 /* orderedCollectionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = orderedCollectionCell.m; sourceTree = "<group>"; };
+		21FB12F12109752D00EA40B9 /* orderedCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = orderedCell.h; sourceTree = "<group>"; };
+		21FB12F22109752D00EA40B9 /* orderedCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = orderedCell.m; sourceTree = "<group>"; };
+		21FB12F32109752D00EA40B9 /* orderedCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = orderedCell.xib; sourceTree = "<group>"; };
+		21FB12F62109754800EA40B9 /* orderingCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = orderingCell.h; sourceTree = "<group>"; };
+		21FB12F72109754800EA40B9 /* orderingCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = orderingCell.m; sourceTree = "<group>"; };
+		21FB12F82109754800EA40B9 /* orderingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = orderingCell.xib; sourceTree = "<group>"; };
+		21FB13012109C4EA00EA40B9 /* meHeadCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = meHeadCell.h; sourceTree = "<group>"; };
+		21FB13022109C4EA00EA40B9 /* meHeadCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = meHeadCell.m; sourceTree = "<group>"; };
+		21FB13032109C4EA00EA40B9 /* meHeadCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = meHeadCell.xib; sourceTree = "<group>"; };
+		21FB13062109C57C00EA40B9 /* loginOutCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = loginOutCell.h; sourceTree = "<group>"; };
+		21FB13072109C57C00EA40B9 /* loginOutCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = loginOutCell.m; sourceTree = "<group>"; };
+		21FB13082109C57C00EA40B9 /* loginOutCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = loginOutCell.xib; sourceTree = "<group>"; };
+		21FB130B2109E82800EA40B9 /* KKPMessageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKPMessageViewController.h; sourceTree = "<group>"; };
+		21FB130C2109E82800EA40B9 /* KKPMessageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKPMessageViewController.m; sourceTree = "<group>"; };
+		21FB13112109E9A600EA40B9 /* KKPMedicalRecordViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKPMedicalRecordViewController.h; sourceTree = "<group>"; };
+		21FB13122109E9A600EA40B9 /* KKPMedicalRecordViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKPMedicalRecordViewController.m; sourceTree = "<group>"; };
+		21FB13142109E9C000EA40B9 /* KKPMyDoctorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKPMyDoctorViewController.h; sourceTree = "<group>"; };
+		21FB13152109E9C000EA40B9 /* KKPMyDoctorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKPMyDoctorViewController.m; sourceTree = "<group>"; };
+		21FB13172109E9D400EA40B9 /* KKPSettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKPSettingViewController.h; sourceTree = "<group>"; };
+		21FB13182109E9D400EA40B9 /* KKPSettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKPSettingViewController.m; sourceTree = "<group>"; };
+		21FB131A2109EAF100EA40B9 /* KKPInstructionsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKPInstructionsViewController.h; sourceTree = "<group>"; };
+		21FB131B2109EAF100EA40B9 /* KKPInstructionsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKPInstructionsViewController.m; sourceTree = "<group>"; };
+		21FB131D2109EB6600EA40B9 /* KKPFeedbackViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKPFeedbackViewController.h; sourceTree = "<group>"; };
+		21FB131E2109EB6600EA40B9 /* KKPFeedbackViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKPFeedbackViewController.m; sourceTree = "<group>"; };
+		21FB13202109EB9400EA40B9 /* KKPAboutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKPAboutViewController.h; sourceTree = "<group>"; };
+		21FB13212109EB9400EA40B9 /* KKPAboutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKPAboutViewController.m; sourceTree = "<group>"; };
+		21FB13232109ECA800EA40B9 /* KKPMyPatientViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKPMyPatientViewController.h; sourceTree = "<group>"; };
+		21FB13242109ECA800EA40B9 /* KKPMyPatientViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKPMyPatientViewController.m; sourceTree = "<group>"; };
+		21FB1327210BFBA700EA40B9 /* KKPDoctorInfoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKPDoctorInfoViewController.h; sourceTree = "<group>"; };
+		21FB1328210BFBA700EA40B9 /* KKPDoctorInfoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKPDoctorInfoViewController.m; sourceTree = "<group>"; };
+		21FB132B210BFED000EA40B9 /* doctorInfoView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = doctorInfoView.h; sourceTree = "<group>"; };
+		21FB132C210BFED000EA40B9 /* doctorInfoView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = doctorInfoView.m; sourceTree = "<group>"; };
+		21FB132E210BFEE500EA40B9 /* doctorInfoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = doctorInfoView.xib; sourceTree = "<group>"; };
+		21FCFB6E214025FD0070BB15 /* SingleSelectButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SingleSelectButton.h; sourceTree = "<group>"; };
+		21FCFB6F214025FD0070BB15 /* SingleSelectButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SingleSelectButton.m; sourceTree = "<group>"; };
+		21FCFB712142756C0070BB15 /* conclusionModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = conclusionModel.h; sourceTree = "<group>"; };
+		21FCFB722142756C0070BB15 /* conclusionModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = conclusionModel.m; sourceTree = "<group>"; };
 		381CE4C3B1C41CA77FE3EE35 /* Pods-KKDoc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KKDoc.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KKDoc/Pods-KKDoc.debug.xcconfig"; sourceTree = "<group>"; };
 		64F86BA8A040AE55EE4D3A80 /* Pods-KKDoc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KKDoc.release.xcconfig"; path = "Pods/Target Support Files/Pods-KKDoc/Pods-KKDoc.release.xcconfig"; sourceTree = "<group>"; };
 		88198D1A6AF92FDE15D65326 /* libPods-KKPat.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KKPat.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -183,6 +463,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21D2E9FB21330BDA00435BB0 /* SystemConfiguration.framework in Frameworks */,
+				21D2E9F921330BC600435BB0 /* CoreTelephony.framework in Frameworks */,
+				21D2E9F721330BAB00435BB0 /* libresolv.tbd in Frameworks */,
 				218147C220FD8F080038133D /* libstdc++.tbd in Frameworks */,
 				218147C020FD8EFB0038133D /* JavaScriptCore.framework in Frameworks */,
 				218147BE20FD8EF20038133D /* MessageUI.framework in Frameworks */,
@@ -195,6 +478,57 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		212100E7210F3DE000CF7A74 /* OrderedInfo */ = {
+			isa = PBXGroup;
+			children = (
+				212100F1210FED3700CF7A74 /* KKPOrderedInfoViewController.h */,
+				212100F2210FED3700CF7A74 /* KKPOrderedInfoViewController.m */,
+				217912E1211D234E00DFC961 /* KKPOrderingInfoViewController.h */,
+				217912E2211D234E00DFC961 /* KKPOrderingInfoViewController.m */,
+			);
+			path = OrderedInfo;
+			sourceTree = "<group>";
+		};
+		212100FB21104A3E00CF7A74 /* message */ = {
+			isa = PBXGroup;
+			children = (
+				212100FC21104A7200CF7A74 /* messageCell.h */,
+				212100FD21104A7200CF7A74 /* messageCell.m */,
+				212100FE21104A7200CF7A74 /* messageCell.xib */,
+			);
+			path = message;
+			sourceTree = "<group>";
+		};
+		212101012110531400CF7A74 /* mypatient */ = {
+			isa = PBXGroup;
+			children = (
+				212101042110534400CF7A74 /* myPatientCell.xib */,
+				212101072110572800CF7A74 /* myPatientCell.h */,
+				212101082110572800CF7A74 /* myPatientCell.m */,
+			);
+			path = mypatient;
+			sourceTree = "<group>";
+		};
+		2121010A2110A4EB00CF7A74 /* manage */ = {
+			isa = PBXGroup;
+			children = (
+				2121010B2110A4FD00CF7A74 /* API */,
+			);
+			path = manage;
+			sourceTree = "<group>";
+		};
+		2121010B2110A4FD00CF7A74 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				218DE1BD2146823300889BFC /* PrediagnosisAPI */,
+				21DD208F212C27D8008BB9D8 /* other */,
+				212101332112DD5400CF7A74 /* base64.txt */,
+				2121010C2110A5DE00CF7A74 /* HumanIdentityCard.h */,
+				2121010D2110A5DE00CF7A74 /* HumanIdentityCard.m */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
 		2168974D20EBA27F003A2DE0 = {
 			isa = PBXGroup;
 			children = (
@@ -278,6 +612,7 @@
 		2168979220EBA47C003A2DE0 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				2121010A2110A4EB00CF7A74 /* manage */,
 				216897E120EBB420003A2DE0 /* others */,
 				216897CB20EBAC6E003A2DE0 /* Header */,
 				2168979420EBA4DE003A2DE0 /* Controller */,
@@ -293,6 +628,11 @@
 		2168979320EBA4CA003A2DE0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				21CCFD93213F668300DB0505 /* Prediagnosis */,
+				21DD2094212CED0F008BB9D8 /* KKEntryInfo.h */,
+				21DD2095212CED0F008BB9D8 /* KKEntryInfo.m */,
+				21DD209A212FECE2008BB9D8 /* realDoctorModel.h */,
+				21DD209B212FECE2008BB9D8 /* realDoctorModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -300,6 +640,8 @@
 		2168979420EBA4DE003A2DE0 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				217912CC211AE4A100DFC961 /* Prediagnosis */,
+				21FB12FE21098DDB00EA40B9 /* doctorInfo */,
 				218147AB20FC93390038133D /* others */,
 				2181479420FC39A10038133D /* Reservation */,
 				2181479320FC39680038133D /* RealTime */,
@@ -313,6 +655,12 @@
 		2168979520EBA4EE003A2DE0 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				217912D6211B2B5E00DFC961 /* requestAccept */,
+				217912D0211B03E000DFC961 /* Prediagnosis */,
+				21FB13002109C23900EA40B9 /* Me */,
+				21FB12E421087DC400EA40B9 /* Order */,
+				21FB12DC210866A200EA40B9 /* Reservation */,
+				21FB12D62108287A00EA40B9 /* realTime */,
 				21A97A152107446B006AE1BF /* Menu */,
 				218147C720FDE2A50038133D /* EntryInfo */,
 			);
@@ -322,6 +670,8 @@
 		2168979620EBA508003A2DE0 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				212100E4210DC43000CF7A74 /* CustomImagePickerViewController.h */,
+				212100E5210DC43000CF7A74 /* CustomImagePickerViewController.m */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -442,6 +792,7 @@
 				2181472920F491B90038133D /* KKImage.h */,
 				2181472A20F492A90038133D /* KKNetworkingConfiguration.h */,
 				2181472B20F49CE70038133D /* KKConfiguration.h */,
+				218DE1C1214683D800889BFC /* APIConfig.h */,
 			);
 			path = Header;
 			sourceTree = "<group>";
@@ -468,8 +819,26 @@
 		216897D920EBB1A6003A2DE0 /* Me */ = {
 			isa = PBXGroup;
 			children = (
+				21F4B4342125AAC9004650E2 /* editMypatient */,
+				21D7CCA92123CB3F00C95062 /* editMedicalRecord */,
 				21A979632102DB29006AE1BF /* KKPMeViewController.h */,
 				21A979642102DB29006AE1BF /* KKPMeViewController.m */,
+				21FB130B2109E82800EA40B9 /* KKPMessageViewController.h */,
+				21FB130C2109E82800EA40B9 /* KKPMessageViewController.m */,
+				21FB13232109ECA800EA40B9 /* KKPMyPatientViewController.h */,
+				21FB13242109ECA800EA40B9 /* KKPMyPatientViewController.m */,
+				21FB13112109E9A600EA40B9 /* KKPMedicalRecordViewController.h */,
+				21FB13122109E9A600EA40B9 /* KKPMedicalRecordViewController.m */,
+				21FB13142109E9C000EA40B9 /* KKPMyDoctorViewController.h */,
+				21FB13152109E9C000EA40B9 /* KKPMyDoctorViewController.m */,
+				21FB13172109E9D400EA40B9 /* KKPSettingViewController.h */,
+				21FB13182109E9D400EA40B9 /* KKPSettingViewController.m */,
+				21FB131A2109EAF100EA40B9 /* KKPInstructionsViewController.h */,
+				21FB131B2109EAF100EA40B9 /* KKPInstructionsViewController.m */,
+				21FB131D2109EB6600EA40B9 /* KKPFeedbackViewController.h */,
+				21FB131E2109EB6600EA40B9 /* KKPFeedbackViewController.m */,
+				21FB13202109EB9400EA40B9 /* KKPAboutViewController.h */,
+				21FB13212109EB9400EA40B9 /* KKPAboutViewController.m */,
 			);
 			path = Me;
 			sourceTree = "<group>";
@@ -477,6 +846,7 @@
 		216897DD20EBB240003A2DE0 /* Orders */ = {
 			isa = PBXGroup;
 			children = (
+				212100E7210F3DE000CF7A74 /* OrderedInfo */,
 				21A979602102DB06006AE1BF /* KKPOrdersViewController.h */,
 				21A979612102DB06006AE1BF /* KKPOrdersViewController.m */,
 			);
@@ -493,6 +863,7 @@
 		216897E520EC62AC003A2DE0 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				21CCFD97213F76B400DB0505 /* plist */,
 				21A9792A21002F71006AE1BF /* View */,
 				218147B320FCDC480038133D /* Base */,
 				2181473020F5B8F30038133D /* Categories */,
@@ -507,8 +878,67 @@
 			children = (
 				216897E720EC6315003A2DE0 /* KKUserDefaults.h */,
 				216897E820EC6315003A2DE0 /* KKUserDefaults.m */,
+				21CCFD4E2138199400DB0505 /* RequestPreAPIManager.h */,
+				21CCFD4F2138199400DB0505 /* RequestPreAPIManager.m */,
 			);
 			path = Utility;
+			sourceTree = "<group>";
+		};
+		217912CC211AE4A100DFC961 /* Prediagnosis */ = {
+			isa = PBXGroup;
+			children = (
+				21CCFD77213BA2DB00DB0505 /* OrganList */,
+				217912CD211AE55F00DFC961 /* MatchDoctorViewController.h */,
+				217912CE211AE55F00DFC961 /* MatchDoctorViewController.m */,
+				213025E0211FC47A0017FF48 /* SetingTimeAndPositionViewController.h */,
+				213025E1211FC47A0017FF48 /* SetingTimeAndPositionViewController.m */,
+				21DD208C2129B766008BB9D8 /* AMapViewController.h */,
+				21DD208D2129B766008BB9D8 /* AMapViewController.m */,
+				21D2E9FC2133E55400435BB0 /* PrediagnosisViewController.h */,
+				21D2E9FD2133E55400435BB0 /* PrediagnosisViewController.m */,
+				21CCFD7E213E6F8200DB0505 /* consultViewController.h */,
+				21CCFD7F213E6F8200DB0505 /* consultViewController.m */,
+			);
+			path = Prediagnosis;
+			sourceTree = "<group>";
+		};
+		217912D0211B03E000DFC961 /* Prediagnosis */ = {
+			isa = PBXGroup;
+			children = (
+				21D2EA04213639D000435BB0 /* Organ */,
+				217912D1211B042D00DFC961 /* matchDotorCell.h */,
+				217912D2211B042D00DFC961 /* matchDotorCell.m */,
+				217912D3211B042D00DFC961 /* matchDotorCell.xib */,
+				213025E5211FC59F0017FF48 /* setingTimeAndPosition.h */,
+				213025E6211FC59F0017FF48 /* setingTimeAndPosition.m */,
+				213025E9211FC5C60017FF48 /* setingTimeAndPosition.xib */,
+				21D7CC1821205E3B00C95062 /* TimeSelect.h */,
+				21D7CC1921205E3B00C95062 /* TimeSelect.m */,
+				21D7CC1D21205E6E00C95062 /* TimeSelect.xib */,
+				21D2E9FF2134F41900435BB0 /* chooseOrganView.h */,
+				21D2EA002134F41900435BB0 /* chooseOrganView.m */,
+				21D2EA022134F44300435BB0 /* chooseOrganView.xib */,
+				21CCFD84213E83F300DB0505 /* singleSelectionCell.h */,
+				21CCFD85213E83F300DB0505 /* singleSelectionCell.m */,
+				21CCFD87213E847000DB0505 /* multiSelectionCell.h */,
+				21CCFD88213E847000DB0505 /* multiSelectionCell.m */,
+				21CCFD90213EBDFC00DB0505 /* valueEntryCell.h */,
+				21CCFD91213EBDFC00DB0505 /* valueEntryCell.m */,
+				218DE1B821465A0900889BFC /* headQuestionView.h */,
+				218DE1B921465A0900889BFC /* headQuestionView.m */,
+				218DE1BB21465CD700889BFC /* headQuestionView.xib */,
+			);
+			path = Prediagnosis;
+			sourceTree = "<group>";
+		};
+		217912D6211B2B5E00DFC961 /* requestAccept */ = {
+			isa = PBXGroup;
+			children = (
+				217912D7211B2C0000DFC961 /* acceptView.xib */,
+				217912D9211B2C1E00DFC961 /* acceptView.h */,
+				217912DA211B2C1E00DFC961 /* acceptView.m */,
+			);
+			path = requestAccept;
 			sourceTree = "<group>";
 		};
 		2181472C20F4A1880038133D /* NetworkingManager */ = {
@@ -546,6 +976,7 @@
 			children = (
 				2181475620F6D6FD0038133D /* KKMed.strings */,
 				218147F720FF27F40038133D /* illnessName.plist */,
+				21D7CCE02124649400C95062 /* instruction.txt */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -657,11 +1088,28 @@
 			path = EntryInfo;
 			sourceTree = "<group>";
 		};
+		218DE1BD2146823300889BFC /* PrediagnosisAPI */ = {
+			isa = PBXGroup;
+			children = (
+				218DE1BE214682C300889BFC /* PrediagnosisAPIManager.h */,
+				218DE1BF214682C300889BFC /* PrediagnosisAPIManager.m */,
+				218DE1C22146A18000889BFC /* KKFetchQuestionManager.h */,
+				218DE1C32146A18000889BFC /* KKFetchQuestionManager.m */,
+			);
+			path = PrediagnosisAPI;
+			sourceTree = "<group>";
+		};
 		21A9792A21002F71006AE1BF /* View */ = {
 			isa = PBXGroup;
 			children = (
 				21A9792B21002FA9006AE1BF /* UpDownSelectView.h */,
 				21A9792C21002FA9006AE1BF /* UpDownSelectView.m */,
+				213025DB211EC17B0017FF48 /* SearchView.h */,
+				213025DC211EC17B0017FF48 /* SearchView.m */,
+				21D7CC4121211E6B00C95062 /* KKPopupView.h */,
+				21D7CC4221211E6B00C95062 /* KKPopupView.m */,
+				21FCFB6E214025FD0070BB15 /* SingleSelectButton.h */,
+				21FCFB6F214025FD0070BB15 /* SingleSelectButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -675,9 +1123,205 @@
 			path = Menu;
 			sourceTree = "<group>";
 		};
+		21CCFD77213BA2DB00DB0505 /* OrganList */ = {
+			isa = PBXGroup;
+			children = (
+				21CCFD78213BA38100DB0505 /* OrganListViewController.h */,
+				21CCFD79213BA38100DB0505 /* OrganListViewController.m */,
+			);
+			path = OrganList;
+			sourceTree = "<group>";
+		};
+		21CCFD93213F668300DB0505 /* Prediagnosis */ = {
+			isa = PBXGroup;
+			children = (
+				21CCFD94213F66F700DB0505 /* questionModel.h */,
+				21CCFD95213F66F700DB0505 /* questionModel.m */,
+				21CCFD9A213F8CE100DB0505 /* entrieModel.h */,
+				21CCFD9B213F8CE100DB0505 /* entrieModel.m */,
+				21CCFD9D213F901F00DB0505 /* answersModel.h */,
+				21CCFD9E213F901F00DB0505 /* answersModel.m */,
+				21FCFB712142756C0070BB15 /* conclusionModel.h */,
+				21FCFB722142756C0070BB15 /* conclusionModel.m */,
+				218DE1C52146A26D00889BFC /* PreParamModel.h */,
+				218DE1C62146A26D00889BFC /* PreParamModel.m */,
+			);
+			path = Prediagnosis;
+			sourceTree = "<group>";
+		};
+		21CCFD97213F76B400DB0505 /* plist */ = {
+			isa = PBXGroup;
+			children = (
+				21CCFD98213F76EA00DB0505 /* question.plist */,
+			);
+			path = plist;
+			sourceTree = "<group>";
+		};
+		21D2EA04213639D000435BB0 /* Organ */ = {
+			isa = PBXGroup;
+			children = (
+				21D2EA0521363A3400435BB0 /* womenFrontOrganView.h */,
+				21D2EA0621363A3400435BB0 /* womenFrontOrganView.m */,
+				21D2EA0821363AB600435BB0 /* womenFrontOrganView.xib */,
+				21CCFD41213794A300DB0505 /* womenBackView.h */,
+				21CCFD42213794A300DB0505 /* womenBackView.m */,
+				21CCFD492137A32C00DB0505 /* womenBackView.xib */,
+				21CCFD462137A31700DB0505 /* menBackView.h */,
+				21CCFD472137A31700DB0505 /* menBackView.m */,
+				21CCFD44213794BE00DB0505 /* menBackView.xib */,
+				21CCFD7B213D6C0400DB0505 /* SymtomCell.h */,
+				21CCFD7C213D6C0400DB0505 /* SymtomCell.m */,
+				21CCFD8D213EB79900DB0505 /* answerCell.h */,
+				21CCFD8E213EB79900DB0505 /* answerCell.m */,
+			);
+			path = Organ;
+			sourceTree = "<group>";
+		};
+		21D7CCA2212310FF00C95062 /* PastMedicalRecords */ = {
+			isa = PBXGroup;
+			children = (
+				21D7CCA3212313C500C95062 /* MedicalRecordsView.h */,
+				21D7CCA4212313C500C95062 /* MedicalRecordsView.m */,
+				21D7CCA6212313E600C95062 /* MedicalRecordsView.xib */,
+			);
+			path = PastMedicalRecords;
+			sourceTree = "<group>";
+		};
+		21D7CCA92123CB3F00C95062 /* editMedicalRecord */ = {
+			isa = PBXGroup;
+			children = (
+				21D7CCAA2123CBBF00C95062 /* KKEditMedicalRecordViewController.h */,
+				21D7CCAB2123CBBF00C95062 /* KKEditMedicalRecordViewController.m */,
+			);
+			path = editMedicalRecord;
+			sourceTree = "<group>";
+		};
+		21D7CCAF21241D6B00C95062 /* mydoctor */ = {
+			isa = PBXGroup;
+			children = (
+				21D7CCB021242F4200C95062 /* myDoctorCell.h */,
+				21D7CCB121242F4200C95062 /* myDoctorCell.m */,
+				21D7CCB221242F4200C95062 /* myDoctorCell.xib */,
+			);
+			path = mydoctor;
+			sourceTree = "<group>";
+		};
+		21DD208F212C27D8008BB9D8 /* other */ = {
+			isa = PBXGroup;
+			children = (
+				21DD2090212C284C008BB9D8 /* KKLoginManager.h */,
+				21DD2091212C284C008BB9D8 /* KKLoginManager.m */,
+				21DD2097212CF398008BB9D8 /* KKEntryInfoManager.h */,
+				21DD2098212CF398008BB9D8 /* KKEntryInfoManager.m */,
+				21D2E9F02130FB3600435BB0 /* KKRealDoctorListManager.h */,
+				21D2E9F12130FB3600435BB0 /* KKRealDoctorListManager.m */,
+				21D2E9F32132932C00435BB0 /* KKSearchDoctorManager.h */,
+				21D2E9F42132932C00435BB0 /* KKSearchDoctorManager.m */,
+			);
+			path = other;
+			sourceTree = "<group>";
+		};
+		21F4B4342125AAC9004650E2 /* editMypatient */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = editMypatient;
+			sourceTree = "<group>";
+		};
+		21FB12D62108287A00EA40B9 /* realTime */ = {
+			isa = PBXGroup;
+			children = (
+				21FB132A210BFEA100EA40B9 /* doctorInfo */,
+				21FB12D7210828B300EA40B9 /* RealTimeDoctorCell.h */,
+				21FB12D8210828B300EA40B9 /* RealTimeDoctorCell.m */,
+				21FB12D9210828B300EA40B9 /* RealTimeDoctorCell.xib */,
+			);
+			path = realTime;
+			sourceTree = "<group>";
+		};
+		21FB12DC210866A200EA40B9 /* Reservation */ = {
+			isa = PBXGroup;
+			children = (
+				21FB12DD210866EC00EA40B9 /* reservationCell.h */,
+				21FB12DE210866EC00EA40B9 /* reservationCell.m */,
+				21FB12E22108670800EA40B9 /* reservationCell.xib */,
+			);
+			path = Reservation;
+			sourceTree = "<group>";
+		};
+		21FB12E421087DC400EA40B9 /* Order */ = {
+			isa = PBXGroup;
+			children = (
+				21FB12E821087E1700EA40B9 /* orderHeadView.h */,
+				21FB12E921087E1700EA40B9 /* orderHeadView.m */,
+				21FB12EB21088F3A00EA40B9 /* OrderingCollectionCell.h */,
+				21FB12EC21088F3A00EA40B9 /* OrderingCollectionCell.m */,
+				21FB12EE21088F5500EA40B9 /* orderedCollectionCell.h */,
+				21FB12EF21088F5500EA40B9 /* orderedCollectionCell.m */,
+				21FB12F12109752D00EA40B9 /* orderedCell.h */,
+				21FB12F22109752D00EA40B9 /* orderedCell.m */,
+				21FB12F32109752D00EA40B9 /* orderedCell.xib */,
+				21FB12F62109754800EA40B9 /* orderingCell.h */,
+				21FB12F72109754800EA40B9 /* orderingCell.m */,
+				21FB12F82109754800EA40B9 /* orderingCell.xib */,
+				212100F6210FF1BF00CF7A74 /* orderedInfoView.h */,
+				212100F7210FF1BF00CF7A74 /* orderedInfoView.m */,
+				212100F9210FF1E600CF7A74 /* orderedInfoView.xib */,
+				217912DC211C0C7700DFC961 /* orderingInfo.h */,
+				217912DD211C0C7700DFC961 /* orderingInfo.m */,
+				217912DF211C0CA000DFC961 /* orderingInfo.xib */,
+			);
+			path = Order;
+			sourceTree = "<group>";
+		};
+		21FB12FE21098DDB00EA40B9 /* doctorInfo */ = {
+			isa = PBXGroup;
+			children = (
+				21FB1327210BFBA700EA40B9 /* KKPDoctorInfoViewController.h */,
+				21FB1328210BFBA700EA40B9 /* KKPDoctorInfoViewController.m */,
+			);
+			path = doctorInfo;
+			sourceTree = "<group>";
+		};
+		21FB13002109C23900EA40B9 /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				21D7CCAF21241D6B00C95062 /* mydoctor */,
+				21D7CCA2212310FF00C95062 /* PastMedicalRecords */,
+				212101012110531400CF7A74 /* mypatient */,
+				212100FB21104A3E00CF7A74 /* message */,
+				21FB13012109C4EA00EA40B9 /* meHeadCell.h */,
+				21FB13022109C4EA00EA40B9 /* meHeadCell.m */,
+				21FB13032109C4EA00EA40B9 /* meHeadCell.xib */,
+				21FB13062109C57C00EA40B9 /* loginOutCell.h */,
+				21FB13072109C57C00EA40B9 /* loginOutCell.m */,
+				21FB13082109C57C00EA40B9 /* loginOutCell.xib */,
+				217912C7211AD02A00DFC961 /* MeCell.h */,
+				217912C8211AD02A00DFC961 /* MeCell.m */,
+				217912C9211AD02A00DFC961 /* MeCell.xib */,
+				21D7CCD921244A2000C95062 /* SetingCell.h */,
+				21D7CCDA21244A2100C95062 /* SetingCell.m */,
+				21D7CCDB21244A2100C95062 /* SetingCell.xib */,
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
+		21FB132A210BFEA100EA40B9 /* doctorInfo */ = {
+			isa = PBXGroup;
+			children = (
+				21FB132B210BFED000EA40B9 /* doctorInfoView.h */,
+				21FB132C210BFED000EA40B9 /* doctorInfoView.m */,
+				21FB132E210BFEE500EA40B9 /* doctorInfoView.xib */,
+			);
+			path = doctorInfo;
+			sourceTree = "<group>";
+		};
 		26EED606BD0EFAD227A7C2EB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				21D2E9FA21330BDA00435BB0 /* SystemConfiguration.framework */,
+				21D2E9F821330BC600435BB0 /* CoreTelephony.framework */,
+				21D2E9F621330BAB00435BB0 /* libresolv.tbd */,
 				218147C120FD8F080038133D /* libstdc++.tbd */,
 				218147BF20FD8EFB0038133D /* JavaScriptCore.framework */,
 				218147BD20FD8EF20038133D /* MessageUI.framework */,
@@ -788,9 +1432,14 @@
 				216897C220EBAB02003A2DE0 /* Assets.xcassets in Resources */,
 				2181478A20FC2A830038133D /* LaunchScreen.storyboard in Resources */,
 				216897A720EBA6E7003A2DE0 /* Info.plist in Resources */,
+				21D7CCE12124649400C95062 /* instruction.txt in Resources */,
+				213025EA211FC5C60017FF48 /* setingTimeAndPosition.xib in Resources */,
+				21D7CCB521242F4200C95062 /* myDoctorCell.xib in Resources */,
 				2181479120FC35820038133D /* LaunchScreen.storyboard in Resources */,
 				2181479B20FC3A300038133D /* KKPGuideViewController.xib in Resources */,
+				21D7CCA7212313E600C95062 /* MedicalRecordsView.xib in Resources */,
 				218147A320FC44760038133D /* LoginViewController.xib in Resources */,
+				21D7CCDE21244A2100C95062 /* SetingCell.xib in Resources */,
 				2181475320F6D6FD0038133D /* KKMed.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -799,18 +1448,45 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				217912D5211B042D00DFC961 /* matchDotorCell.xib in Resources */,
 				2181475420F6D6FD0038133D /* KKMed.strings in Resources */,
+				21D7CCB621242F4200C95062 /* myDoctorCell.xib in Resources */,
+				217912D8211B2C0000DFC961 /* acceptView.xib in Resources */,
 				218147AA20FC7DA20038133D /* DisclaimerViewController.xib in Resources */,
+				21FB130A2109C57C00EA40B9 /* loginOutCell.xib in Resources */,
 				218147B120FC938C0038133D /* RefuseViewController.xib in Resources */,
+				21D7CC1E21205E6E00C95062 /* TimeSelect.xib in Resources */,
 				2181478B20FC2A830038133D /* LaunchScreen.storyboard in Resources */,
+				21D7CCDF21244A2100C95062 /* SetingCell.xib in Resources */,
+				217912CB211AD02A00DFC961 /* MeCell.xib in Resources */,
 				216897BA20EBA9CE003A2DE0 /* Assets.xcassets in Resources */,
+				21FB132F210BFEE500EA40B9 /* doctorInfoView.xib in Resources */,
+				21FB13052109C4EA00EA40B9 /* meHeadCell.xib in Resources */,
+				212101062110534400CF7A74 /* myPatientCell.xib in Resources */,
+				21D7CCE22124649400C95062 /* instruction.txt in Resources */,
+				217912E0211C0CA000DFC961 /* orderingInfo.xib in Resources */,
+				21D2EA0921363AB600435BB0 /* womenFrontOrganView.xib in Resources */,
+				21D2EA032134F44300435BB0 /* chooseOrganView.xib in Resources */,
+				212101342112DD5400CF7A74 /* base64.txt in Resources */,
 				2181479220FC35820038133D /* LaunchScreen.storyboard in Resources */,
+				213025EB211FC5C60017FF48 /* setingTimeAndPosition.xib in Resources */,
 				21A97938210063C2006AE1BF /* InfoHeadView.xib in Resources */,
+				21D7CCA8212313E600C95062 /* MedicalRecordsView.xib in Resources */,
+				21CCFD99213F76EA00DB0505 /* question.plist in Resources */,
+				21FB12F52109752D00EA40B9 /* orderedCell.xib in Resources */,
 				218147F820FF27F40038133D /* illnessName.plist in Resources */,
+				212100FA210FF1E600CF7A74 /* orderedInfoView.xib in Resources */,
+				218DE1BC21465CD700889BFC /* headQuestionView.xib in Resources */,
+				21FB12DB210828B300EA40B9 /* RealTimeDoctorCell.xib in Resources */,
+				21CCFD45213794BE00DB0505 /* menBackView.xib in Resources */,
+				21CCFD4A2137A32C00DB0505 /* womenBackView.xib in Resources */,
 				2181479C20FC3A300038133D /* KKPGuideViewController.xib in Resources */,
+				21FB12FA2109754800EA40B9 /* orderingCell.xib in Resources */,
+				21FB12E32108670800EA40B9 /* reservationCell.xib in Resources */,
 				218147A420FC44760038133D /* LoginViewController.xib in Resources */,
 				21A9794A2102120A006AE1BF /* SicknessNameCell.xib in Resources */,
 				2168979E20EBA5BD003A2DE0 /* Info.plist in Resources */,
+				2121010021104A7200CF7A74 /* messageCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -824,11 +1500,13 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-KKPat/Pods-KKPat-resources.sh",
+				"${PODS_ROOT}/AMap3DMap/MAMapKit.framework/AMap.bundle",
 				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AMap.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
 			);
@@ -892,11 +1570,13 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-KKDoc/Pods-KKDoc-resources.sh",
+				"${PODS_ROOT}/AMap3DMap/MAMapKit.framework/AMap.bundle",
 				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AMap.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
 			);
@@ -930,18 +1610,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				213025E2211FC47A0017FF48 /* SetingTimeAndPositionViewController.m in Sources */,
 				2181473620F5B9BF0038133D /* NSString+KKNetworkingMethods.m in Sources */,
 				216897C020EBAA51003A2DE0 /* KKDAppDelegate.m in Sources */,
+				213025E7211FC59F0017FF48 /* setingTimeAndPosition.m in Sources */,
+				21D7CCDC21244A2100C95062 /* SetingCell.m in Sources */,
 				218147A120FC44760038133D /* LoginViewController.m in Sources */,
 				2181479920FC3A300038133D /* KKPGuideViewController.m in Sources */,
 				2181474A20F612A70038133D /* KKAPIBaseManager.m in Sources */,
 				2181472F20F4A1DE0038133D /* NetWorkingManager.m in Sources */,
+				21D7CCAC2123CBBF00C95062 /* KKEditMedicalRecordViewController.m in Sources */,
 				216897E920EC6315003A2DE0 /* KKUserDefaults.m in Sources */,
 				2181473320F5B9520038133D /* NSArray+KKNetworkingMethods.m in Sources */,
 				2181474220F5BF470038133D /* NSSet+MSCategory.m in Sources */,
 				2181473A20F5BA240038133D /* NSDictionary+KKNetworkingMethods.m in Sources */,
+				213025DD211EC17B0017FF48 /* SearchView.m in Sources */,
 				2181474620F603C10038133D /* KKBaseUrlConfiguration.m in Sources */,
 				2181473E20F5BA620038133D /* NSObject+KKNetworkingMethods.m in Sources */,
+				21D7CCB321242F4200C95062 /* myDoctorCell.m in Sources */,
 				216897A820EBA6E7003A2DE0 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -950,34 +1636,104 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21DD208B2129B3C0008BB9D8 /* SetingTimeAndPositionViewController.m in Sources */,
+				217912C6211A8F9B00DFC961 /* NSArray+KKNetworkingMethods.m in Sources */,
+				21FCFB70214025FD0070BB15 /* SingleSelectButton.m in Sources */,
+				21CCFD8F213EB79900DB0505 /* answerCell.m in Sources */,
+				21FB13162109E9C000EA40B9 /* KKPMyDoctorViewController.m in Sources */,
+				21FB13252109ECA800EA40B9 /* KKPMyPatientViewController.m in Sources */,
+				21FB12E0210866EC00EA40B9 /* reservationCell.m in Sources */,
 				218147B820FD71770038133D /* KKUserDefaults.m in Sources */,
+				21FB13092109C57C00EA40B9 /* loginOutCell.m in Sources */,
+				212100E6210DC43000CF7A74 /* CustomImagePickerViewController.m in Sources */,
 				21A979652102DB29006AE1BF /* KKPMeViewController.m in Sources */,
+				21D7CCDD21244A2100C95062 /* SetingCell.m in Sources */,
+				21CCFD502138199400DB0505 /* RequestPreAPIManager.m in Sources */,
 				218147C620FDD4AA0038133D /* EntryInfoViewController.m in Sources */,
 				2181478E20FC35200038133D /* NetWorkingManager.m in Sources */,
+				21DD2096212CED0F008BB9D8 /* KKEntryInfo.m in Sources */,
+				218DE1C0214682C300889BFC /* PrediagnosisAPIManager.m in Sources */,
+				21FB12F42109752D00EA40B9 /* orderedCell.m in Sources */,
+				21FB12F021088F5500EA40B9 /* orderedCollectionCell.m in Sources */,
+				213025DE211EC17B0017FF48 /* SearchView.m in Sources */,
+				21D7CCA5212313C500C95062 /* MedicalRecordsView.m in Sources */,
 				21A9792721002697006AE1BF /* Historyillness.m in Sources */,
 				21A97A1821074498006AE1BF /* TabBarBgView.m in Sources */,
+				218DE1C72146A26D00889BFC /* PreParamModel.m in Sources */,
+				21FB130D2109E82800EA40B9 /* KKPMessageViewController.m in Sources */,
 				216897D720EBB125003A2DE0 /* KKPBaseViewController.m in Sources */,
+				21DD2099212CF398008BB9D8 /* KKEntryInfoManager.m in Sources */,
+				218DE1BA21465A0900889BFC /* headQuestionView.m in Sources */,
 				218147B020FC938C0038133D /* RefuseViewController.m in Sources */,
+				21D2EA012134F41900435BB0 /* chooseOrganView.m in Sources */,
+				21CCFD9C213F8CE100DB0505 /* entrieModel.m in Sources */,
+				21FB132D210BFED000EA40B9 /* doctorInfoView.m in Sources */,
+				21FB12DA210828B300EA40B9 /* RealTimeDoctorCell.m in Sources */,
 				21A9793B210063EB006AE1BF /* InfoHeadView.m in Sources */,
 				2181479A20FC3A300038133D /* KKPGuideViewController.m in Sources */,
+				21CCFD482137A31700DB0505 /* menBackView.m in Sources */,
+				21D7CC1A21205E3B00C95062 /* TimeSelect.m in Sources */,
 				216897BD20EBA9F8003A2DE0 /* KKPAppDelegate.m in Sources */,
+				21FB131C2109EAF100EA40B9 /* KKPInstructionsViewController.m in Sources */,
+				21D2EA0721363A3400435BB0 /* womenFrontOrganView.m in Sources */,
+				21CCFD7A213BA38100DB0505 /* OrganListViewController.m in Sources */,
+				21DD2092212C284C008BB9D8 /* KKLoginManager.m in Sources */,
+				217912D4211B042D00DFC961 /* matchDotorCell.m in Sources */,
+				21D7CC4321211E6B00C95062 /* KKPopupView.m in Sources */,
+				217912DE211C0C7700DFC961 /* orderingInfo.m in Sources */,
 				2181474320F5BF470038133D /* NSSet+MSCategory.m in Sources */,
+				218DE1C42146A18000889BFC /* KKFetchQuestionManager.m in Sources */,
 				21A9792D21002FA9006AE1BF /* UpDownSelectView.m in Sources */,
 				21A979492102120A006AE1BF /* SicknessNameCell.m in Sources */,
 				2181473B20F5BA240038133D /* NSDictionary+KKNetworkingMethods.m in Sources */,
 				2181474B20F612A70038133D /* KKAPIBaseManager.m in Sources */,
+				21CCFD7D213D6C0500DB0505 /* SymtomCell.m in Sources */,
 				2181473720F5B9BF0038133D /* NSString+KKNetworkingMethods.m in Sources */,
+				213025E8211FC59F0017FF48 /* setingTimeAndPosition.m in Sources */,
+				21CCFD9F213F901F00DB0505 /* answersModel.m in Sources */,
+				212100F4210FED3700CF7A74 /* KKPOrderedInfoViewController.m in Sources */,
+				21CCFD43213794A300DB0505 /* womenBackView.m in Sources */,
+				21FB13222109EB9400EA40B9 /* KKPAboutViewController.m in Sources */,
+				217912E3211D234E00DFC961 /* KKPOrderingInfoViewController.m in Sources */,
+				21D2E9F52132932C00435BB0 /* KKSearchDoctorManager.m in Sources */,
 				218147A220FC44760038133D /* LoginViewController.m in Sources */,
 				21A97940210099CA006AE1BF /* KKPatTabBarController.m in Sources */,
+				217912CA211AD02A00DFC961 /* MeCell.m in Sources */,
 				21A9794D21021EA9006AE1BF /* KKPatTabBar.m in Sources */,
+				21FB131F2109EB6600EA40B9 /* KKPFeedbackViewController.m in Sources */,
 				21A9795C2102DAB6006AE1BF /* KKPReservationViewController.m in Sources */,
 				21A979682102DF8B006AE1BF /* KKPNavController.m in Sources */,
+				21D2E9F22130FB3600435BB0 /* KKRealDoctorListManager.m in Sources */,
+				21FB13132109E9A600EA40B9 /* KKPMedicalRecordViewController.m in Sources */,
+				212101092110572800CF7A74 /* myPatientCell.m in Sources */,
 				2181474720F603C10038133D /* KKBaseUrlConfiguration.m in Sources */,
+				21D7CCB421242F4200C95062 /* myDoctorCell.m in Sources */,
+				21FB13042109C4EA00EA40B9 /* meHeadCell.m in Sources */,
+				21CCFD92213EBDFC00DB0505 /* valueEntryCell.m in Sources */,
+				21FB12ED21088F3A00EA40B9 /* OrderingCollectionCell.m in Sources */,
+				21CCFD86213E83F300DB0505 /* singleSelectionCell.m in Sources */,
+				21FCFB732142756C0070BB15 /* conclusionModel.m in Sources */,
+				217912DB211B2C1E00DFC961 /* acceptView.m in Sources */,
 				2181473F20F5BA620038133D /* NSObject+KKNetworkingMethods.m in Sources */,
+				212100FF21104A7200CF7A74 /* messageCell.m in Sources */,
+				21FB1329210BFBA700EA40B9 /* KKPDoctorInfoViewController.m in Sources */,
 				218147A920FC7DA20038133D /* DisclaimerViewController.m in Sources */,
+				21FB12EA21087E1700EA40B9 /* orderHeadView.m in Sources */,
+				21D7CCAD2123CBBF00C95062 /* KKEditMedicalRecordViewController.m in Sources */,
+				2121010E2110A5DE00CF7A74 /* HumanIdentityCard.m in Sources */,
+				21CCFD80213E6F8200DB0505 /* consultViewController.m in Sources */,
+				21D2E9FE2133E55400435BB0 /* PrediagnosisViewController.m in Sources */,
+				21CCFD89213E847000DB0505 /* multiSelectionCell.m in Sources */,
 				21A979622102DB06006AE1BF /* KKPOrdersViewController.m in Sources */,
+				21FB12F92109754800EA40B9 /* orderingCell.m in Sources */,
+				212100F8210FF1BF00CF7A74 /* orderedInfoView.m in Sources */,
+				21FB13192109E9D400EA40B9 /* KKPSettingViewController.m in Sources */,
+				217912CF211AE56000DFC961 /* MatchDoctorViewController.m in Sources */,
+				21DD209C212FECE2008BB9D8 /* realDoctorModel.m in Sources */,
+				21DD208E2129B766008BB9D8 /* AMapViewController.m in Sources */,
 				21A9795F2102DAD0006AE1BF /* KKPRealTimeViewController.m in Sources */,
 				216897A020EBA5C3003A2DE0 /* main.m in Sources */,
+				21CCFD96213F66F700DB0505 /* questionModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1065,6 +1821,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -1172,7 +1929,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = wang.KKMed;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wang.patient;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1191,7 +1948,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = wang.KKMed;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wang.patient;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
